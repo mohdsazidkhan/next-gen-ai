@@ -32,7 +32,7 @@ const Sidebar = () => {
     }else if(e.key === 'exportlist'){
       navigate(`/export-list`)
     }else if(e.key === 'logout'){
-      navigate(`/login`)
+      navigate(`/`)
     }
     
   }

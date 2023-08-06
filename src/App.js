@@ -12,11 +12,12 @@ import Profile from "./pages/Profile";
 import ExportList from "./pages/ExportList";
 import UserDetail from "./pages/UserDetail";
 
-export default function App() {
+export default function App() {;
+
   return (
     <Router>
         <Routes>
-          <Route exact path="/login" element={<Login />} />
+          <Route exact path="/" element={<Login />} />
           <Route exact path="/forgot-password" element={<ForgotPassword />} />
           <Route exact path="/dashboard" element={<Dashboard />} />
           <Route exact path="/profile" element={<Profile />} />

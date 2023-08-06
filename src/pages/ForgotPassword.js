@@ -43,7 +43,7 @@ function ForgotPassword() {
              Submit
             </Button>
             <div className="text-center mt-4">
-            <Link to="/login" className="text-[--secondary-color]">
+            <Link to="/" className="text-[--secondary-color]">
               Back to Login
             </Link>
             </div>
