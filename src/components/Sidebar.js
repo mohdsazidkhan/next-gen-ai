@@ -14,7 +14,7 @@ const { Sider } = Layout;
 const Sidebar = () => {
 
   const navigate = useNavigate()
-  const [collapsed, setCollapsed] = useState(false);
+  const [collapsed, setCollapsed] = useState(true);
   const [selectedKeys, setSelectedKeys] = useState(localStorage.getItem('selectedKeys') || []);
   const [openedKeys, setOpenKeys] = useState([]);
 
