@@ -316,7 +316,9 @@ ul.userList li:after {
     .exportTable .ant-table-tbody>tr>td {
         white-space: nowrap;
     }
-
+    .filterBtns {
+        bottom: 60px;
+    }
     .overlay {
         width: 100%;
         position: fixed;
