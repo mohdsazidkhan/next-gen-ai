@@ -201,7 +201,7 @@ function Filter() {
         />
       </div>
       </div>
-      <div className="flex justify-evenly items-center gap-3 pt-4">
+      <div className="flex justify-evenly items-center gap-3 pt-4 filterBtns">
         <div><Button className="bg-[--primary-color]" type="primary" icon={<DownloadOutlined />} size={'medium'}>
         Apply Filter
           </Button></div>

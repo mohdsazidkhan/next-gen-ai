@@ -217,6 +217,14 @@ ul.userList li:after{
     color: #35c1bd;
     font-weight: 500;
 }
+.filterBtns{
+    position: fixed;
+    bottom: 15px;
+    left: 7px;
+}
+.ant-tree-select-dropdown .ant-select-tree .ant-select-tree-switcher{
+    width: 0;
+}
 @media screen and (max-width:991px){
     .exportTable .ant-table{
         overflow-x: scroll;
