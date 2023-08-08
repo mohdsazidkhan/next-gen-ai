@@ -23,13 +23,13 @@ const ExportLists = () => {
           <div className="exportLists">
             <Card title={<div className="text-[--secondary-color] text-base font-semibold">Hospitals & Health Care</div>} bordered={false} className="mb-4">
                 <div className="text-[--secondary-color] font-semibold mb-2">Advance Searches</div>
-                <div className="grid grid-cols-4">
+                <div className="grid grid-cols-1 lg:grid-cols-4">
                   <div><span className="text-[--secondary-color] mr-2 font-medium">Industries: </span><span className="italic font-medium text-slate-500">Hospital $ Health Care</span></div>
                   <div><span className="text-[--secondary-color] mr-2 font-medium">Email Valid Only: </span><span className="italic font-medium text-slate-500">True</span></div>
                   <div><span className="text-[--secondary-color] mr-2 font-medium">Total Data: </span><span className="font-medium text-slate-500">21056</span></div>
                   <div><span className="text-[--secondary-color] mr-2 font-medium">Exported Data: </span><span className="font-medium text-slate-500">2000</span></div>
                 </div>
-                <div className="mt-6 flex justify-start gap-4">
+                <div className="mt-6 flex flex-col lg:flex-row justify-start gap-4">
                     <Button type="primary" className="bg-[--primary-color]">
                       View Export Details
                     </Button>
@@ -46,13 +46,13 @@ const ExportLists = () => {
             </Card>
             <Card title={<div className="text-[--secondary-color] text-base font-semibold">Hospitals & Health Care</div>} bordered={false} className="mb-4">
                 <div className="text-[--secondary-color] font-semibold mb-2">Advance Searches</div>
-                <div className="grid grid-cols-4">
+                <div className="grid grid-cols-1 lg:grid-cols-4">
                   <div><span className="text-[--secondary-color] mr-2 font-medium">Industries: </span><span className="italic font-medium text-slate-500">Hospital $ Health Care</span></div>
                   <div><span className="text-[--secondary-color] mr-2 font-medium">Email Valid Only: </span><span className="italic font-medium text-slate-500">True</span></div>
                   <div><span className="text-[--secondary-color] mr-2 font-medium">Total Data: </span><span className="font-medium text-slate-500">21056</span></div>
                   <div><span className="text-[--secondary-color] mr-2 font-medium">Exported Data: </span><span className="font-medium text-slate-500">2000</span></div>
                 </div>
-                <div className="mt-6 flex justify-start gap-4">
+                <div className="mt-6 flex-col lg:flex-row flex justify-start gap-4">
                     <Button type="primary" className="bg-[--primary-color]">
                       View Export Details
                     </Button>
@@ -69,13 +69,13 @@ const ExportLists = () => {
             </Card>
             <Card title={<div className="text-[--secondary-color] text-base font-semibold">Hospitals & Health Care</div>} bordered={false} className="mb-4">
                 <div className="text-[--secondary-color] font-semibold mb-2">Advance Searches</div>
-                <div className="grid grid-cols-4">
+                <div className="grid grid-cols-1 lg:grid-cols-4">
                   <div><span className="text-[--secondary-color] mr-2 font-medium">Industries: </span><span className="italic font-medium text-slate-500">Hospital $ Health Care</span></div>
                   <div><span className="text-[--secondary-color] mr-2 font-medium">Email Valid Only: </span><span className="italic font-medium text-slate-500">True</span></div>
                   <div><span className="text-[--secondary-color] mr-2 font-medium">Total Data: </span><span className="font-medium text-slate-500">21056</span></div>
                   <div><span className="text-[--secondary-color] mr-2 font-medium">Exported Data: </span><span className="font-medium text-slate-500">2000</span></div>
                 </div>
-                <div className="mt-6 flex justify-start gap-4">
+                <div className="mt-6 flex-col lg:flex-row flex justify-start gap-4">
                     <Button type="primary" className="bg-[--primary-color]">
                       View Export Details
                     </Button>
