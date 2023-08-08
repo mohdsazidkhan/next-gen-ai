@@ -1,6 +1,6 @@
 import { FilterOutlined,DownloadOutlined } from "@ant-design/icons";
 import { AutoComplete, Button } from "antd";
-function Filter() {
+function Filter(props) {
   const chooseSource = [
     {
       value: "Linkedin",
@@ -103,11 +103,11 @@ function Filter() {
   return (
     <div
       className="h-screen top-[4.1rem] z-10 w-[300px">
-      <div className="flex justify-center items-center pt-4 relative">
+      <div className="flex justify-center items-center relative">
         <div className="me-2">
           <FilterOutlined className="text-xl leading-none text-white" />
         </div>
-        <div className="font-bold text-white text-lg">Filters</div>
+        <div className="font-bold text-white text-lg">{props.title} Filters</div>
       </div>
       <div className="filterScroll">
       <div className="w-full mt-4 mb-4 flex justify-center">

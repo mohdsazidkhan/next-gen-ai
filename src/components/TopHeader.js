@@ -1,5 +1,5 @@
 import React from "react";
-import { Avatar, Dropdown, Layout, Space, Tooltip, theme } from "antd";
+import { Avatar, Button, Dropdown, Layout, Space, Tooltip, theme } from "antd";
 import { SearchOutlined, BellOutlined, UploadOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 const { Header } = Layout;
@@ -54,16 +54,20 @@ const TopHeader = () => {
         className="flex justify-end items-center ps-[50px] shadow"
       >
         <div className="flex gap-4 items-center">
+          <div>
           <Tooltip title="Export Lists">
             <Link to="/export-lists" className="cursor-pointer">
               <UploadOutlined />
             </Link>
           </Tooltip>
+          </div>
+          <div className="mt-0 lg:mt-1">
           <Tooltip title="Search">
             <Link to="/search" className="cursor-pointer">
-              <SearchOutlined />
+              <Button type="primary" className="bg-[--primary-color]">Search</Button>
             </Link>
           </Tooltip>
+          </div>
           <div className="cursor-pointer">
             <Dropdown
               menu={{

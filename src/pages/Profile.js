@@ -229,7 +229,8 @@ const Profile = () => {
         <TopHeader />
         <Content className="bg-white m-6 p-6 mainContent">
           <Tabs
-            defaultActiveKey="1"
+            className="profileTabs"
+            defaultActiveKey="profile"
             type="card"
             size={"medium"}
             items={tabItems}
