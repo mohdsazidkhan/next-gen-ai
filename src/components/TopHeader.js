@@ -1,70 +1,100 @@
-import React, { useState } from 'react';
-import { Dropdown, Layout, Space, theme } from 'antd';
-import {
-  SearchOutlined,
-  BellOutlined
-} from '@ant-design/icons';
-import Filter from '../components/Filter';
-const { Header} = Layout;
+import React from "react";
+import { Avatar, Dropdown, Layout, Space, Tooltip, theme } from "antd";
+import { SearchOutlined, BellOutlined, UploadOutlined } from "@ant-design/icons";
+import { Link } from "react-router-dom";
+const { Header } = Layout;
 
 const TopHeader = () => {
-  const [openFilter, setOpenFilter] = useState(false);
+
   const {
     token: { colorBgContainer },
   } = theme.useToken();
 
-  const handleFilter = ()=>{
-    setOpenFilter(!openFilter)
-  }
-  
   const items = [
     {
       label: "1st menu item",
-      key: '0',
+      key: "0",
     },
     {
       label: "2nd menu item",
-      key: '1',
+      key: "1",
     },
     {
-      label: '3rd menu item',
-      key: '3',
+      label: "3rd menu item",
+      key: "3",
+    },
+  ];
+  const uitems = [
+    {
+      label: <div className="font-bold">Mohd Sazid Khan</div>,
+      key: "0",
+    },
+    {
+      type: 'divider',
+    },
+    {
+      label: <Link to="/profile">Profile</Link>,
+      key: "1",
+    },
+    {
+      label: <Link to="/">Logout</Link>,
+      key: "2",
     },
   ];
   return (
     <>
-    <Filter open={openFilter}/>
-    <Header
-    style={{
-      position: 'sticky',
-      top: 0,
-      zIndex: 1,
-      width: '100%',
-      background: colorBgContainer,
-    }}
-    className='flex justify-between items-center ps-[50px] shadow'
-    >
-      <div className='capitalize font-semibold'>
-        {window.location.pathname.replace("/", "")}   
-      </div>
-      <div className='flex gap-4 items-center'>
-        <div className='cursor-pointer' onClick={handleFilter}>
-        <SearchOutlined/>
+      <Header
+        style={{
+          position: "sticky",
+          top: 0,
+          zIndex: 1,
+          width: "100%",
+          background: colorBgContainer,
+        }}
+        className="flex justify-end items-center ps-[50px] shadow"
+      >
+        <div className="flex gap-4 items-center">
+          <Tooltip title="Export Lists">
+            <Link to="/export-lists" className="cursor-pointer">
+              <UploadOutlined />
+            </Link>
+          </Tooltip>
+          <Tooltip title="Search">
+            <Link to="/search" className="cursor-pointer">
+              <SearchOutlined />
+            </Link>
+          </Tooltip>
+          <div className="cursor-pointer">
+            <Dropdown
+              menu={{
+                items,
+              }}
+              trigger={["click"]}
+            >
+              <Space>
+                <Tooltip title="Notifications">
+                  <BellOutlined />
+                </Tooltip>
+              </Space>
+            </Dropdown>
+          </div>
+          <div className="cursor-pointer">
+            <Dropdown
+              menu={{
+                items: uitems,
+              }}
+              trigger={["click"]}
+              placement="bottomRight"
+            >
+              <Space>
+                <Tooltip title="User">
+                  <Avatar size={32} />
+                </Tooltip>
+              </Space>
+            </Dropdown>
+          </div>
         </div>
-        <div className='cursor-pointer'>
-        <Dropdown
-          menu={{
-            items,
-          }}
-          trigger={['click']}
-        >
-            <Space>
-              <BellOutlined />
-            </Space>
-        </Dropdown>
-        </div>
-      </div>
-    </Header>
+      </Header>
     </>
   );
 };

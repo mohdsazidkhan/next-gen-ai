@@ -89,7 +89,7 @@ const Dashboard = () => {
         <Layout>
         <TopHeader />
         <Content
-          className=" bg-white m-2 lg:m-6 p-2 lg:p-6 min-h-screen"
+          className=" bg-white m-2 lg:m-6 p-2 lg:p-6 min-h-screen mainContent"
         >
           <div className="font-bold text-xl text-[--secondary-color]">
             Dashboard

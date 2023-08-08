@@ -1,23 +1,22 @@
 import React, { useState } from "react";
-import { Layout, Button, Form, Input, Upload, message } from "antd";
+import { Layout, Button, Form, Input, Upload, message, Tabs } from "antd";
 import TopHeader from "../components/TopHeader";
 import Sidebar from "../components/Sidebar";
 import { LoadingOutlined, PlusOutlined } from "@ant-design/icons";
 const { Content } = Layout;
 
 const Profile = () => {
-
   const [loading] = useState(false);
   const [imageUrl, setImageUrl] = useState();
 
   const beforeUpload = (file) => {
-    const isJpgOrPng = file.type === 'image/jpeg' || file.type === 'image/png';
+    const isJpgOrPng = file.type === "image/jpeg" || file.type === "image/png";
     if (!isJpgOrPng) {
-      message.error('You can only upload JPG/PNG file!');
+      message.error("You can only upload JPG/PNG file!");
     }
     const isLt2M = file.size / 1024 / 1024 < 2;
     if (!isLt2M) {
-      message.error('Image must smaller than 2MB!');
+      message.error("Image must smaller than 2MB!");
     }
     return isJpgOrPng && isLt2M;
   };
@@ -27,13 +26,13 @@ const Profile = () => {
   };
   const getBase64 = (file) => {
     return new Promise((resolve, reject) => {
-      const reader = new FileReader()
-      reader.readAsDataURL(file)
-      reader.onload = () => resolve(reader.result)
-      reader.onerror = (error) => reject(error)
-      setImageUrl({ imageUrl: '' })
-    })
-  }
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = () => resolve(reader.result);
+      reader.onerror = (error) => reject(error);
+      setImageUrl({ imageUrl: "" });
+    });
+  };
   const uploadButton = (
     <div>
       {loading ? <LoadingOutlined /> : <PlusOutlined />}
@@ -48,10 +47,10 @@ const Profile = () => {
   );
   const layout = {
     labelCol: {
-      span: 4,
+      span: 6,
     },
     wrapperCol: {
-      span: 20,
+      span: 18,
     },
   };
 
@@ -65,25 +64,17 @@ const Profile = () => {
       range: "${label} must be between ${min} and ${max}",
     },
   };
-  
+
   const onFinish = (values) => {
     console.log(values);
   };
 
-  return (
-    <Layout>
-      <Sidebar />
-      <Layout>
-        <TopHeader />
-        <Content
-          style={{
-            padding: 24,
-            margin: 24,
-            minHeight: "100vh",
-          }}
-          className=" bg-white"
-        >
-          <Form
+  const tabItems = [
+    {
+      label: `Profile`,
+      key: "profile",
+      children: (
+        <Form
             {...layout}
             name="nest-messages"
             onFinish={onFinish}
@@ -121,15 +112,26 @@ const Profile = () => {
               </Upload>
             </Form.Item>
             <Form.Item
-              name={["user", "name"]}
-              label="Name"
+              name={["user", "firstname"]}
+              label="First Name"
               rules={[
                 {
                   required: true,
                 },
               ]}
             >
-              <Input placeholder="Enter Name" />
+              <Input placeholder="Enter First Name" />
+            </Form.Item>
+            <Form.Item
+              name={["user", "lastname"]}
+              label="Last Name"
+              rules={[
+                {
+                  required: true,
+                },
+              ]}
+            >
+              <Input placeholder="Enter Last Name" />
             </Form.Item>
             <Form.Item
               name={["user", "email"]}
@@ -159,24 +161,79 @@ const Profile = () => {
             >
               <Input placeholder="Enter Phone No." />
             </Form.Item>
-            <Form.Item name={["user", "website"]} label="Website">
-              <Input placeholder="Enter Website URL" />
-            </Form.Item>
-            <Form.Item name={["user", "about"]} label="About">
-              <Input.TextArea placeholder="Enter About You" />
-            </Form.Item>
-            <Form.Item
-            className="flex justify-end"
-            >
+            <Form.Item className="flex justify-end">
               <Button
                 type="primary"
                 htmlType="submit"
-                className="bg-[--primary-color] w-24"
+                className="bg-[--primary-color] w-auto"
               >
                 Submit
               </Button>
             </Form.Item>
           </Form>
+      ),
+    },
+    {
+      label: `Change Password`,
+      key: "changePassword",
+      children: (
+        <Form
+            {...layout}
+            name="nest-messages"
+            onFinish={onFinish}
+            style={{
+              maxWidth: 600,
+            }}
+            validateMessages={validateMessages}
+          >
+            <Form.Item
+              name={["user", "password"]}
+              label="Password"
+              rules={[
+                {
+                  required: true,
+                },
+              ]}
+            >
+              <Input.Password placeholder="Enter Password" />
+            </Form.Item>
+            <Form.Item
+              name={["user", "cpassword"]}
+              label="Confirm Password"
+              rules={[
+                {
+                  required: true,
+                },
+              ]}
+            >
+              <Input.Password placeholder="Enter Password" />
+            </Form.Item>
+            <Form.Item className="flex justify-end">
+              <Button
+                type="primary"
+                htmlType="submit"
+                className="bg-[--primary-color] w-auto"
+              >
+                Change Password
+              </Button>
+            </Form.Item>
+          </Form>
+      ),
+    },
+  ];
+
+  return (
+    <Layout>
+      <Sidebar />
+      <Layout>
+        <TopHeader />
+        <Content className="bg-white m-6 p-6 mainContent">
+          <Tabs
+            defaultActiveKey="1"
+            type="card"
+            size={"medium"}
+            items={tabItems}
+          />
         </Content>
       </Layout>
     </Layout>

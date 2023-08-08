@@ -1,5 +1,5 @@
 import React from "react";
-import { Input, Layout,  Table } from "antd";
+import { Input, Layout,  Table, Tooltip } from "antd";
 import TopHeader from "../components/TopHeader";
 import Sidebar from "../components/Sidebar";
 import {CheckCircleOutlined,EyeOutlined,SearchOutlined,ExportOutlined,ReloadOutlined,} from "@ant-design/icons"
@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const { Content } = Layout;
 
-const ExportList = () => {
+const Search = () => {
 
   const dataSource = [
     {
@@ -33,6 +33,9 @@ const ExportList = () => {
       name: 'John',
       area: '10 Downing Street',
       phone: 9876543210,
+      email: 'jhonedoe@gmail.com',
+      jobtitle: 'Front End Developer',
+      lastverified: '15 Jan 2022',
     },
     {
       key: '4',
@@ -140,7 +143,7 @@ const ExportList = () => {
       align: 'center',
       render: () => {
         return (
-          <CheckCircleOutlined className="text-[green] text-lg"/>
+          <Tooltip title="Verified"><CheckCircleOutlined className="text-[#333] text-lg"/></Tooltip>
         )
       },
     },
@@ -149,7 +152,7 @@ const ExportList = () => {
       align: 'center',
       render: () => {
         return (
-          <Link target="_blank" to="/user-detail"><EyeOutlined className="text-[#3866e6] cursor-pointer text-xl"/></Link>
+          <Link target="_blank" to="/user-detail"><Tooltip title="View Detail"><EyeOutlined className="text-[#333] cursor-pointer text-xl"/></Tooltip></Link>
         )
       },
     },
@@ -160,44 +163,17 @@ const ExportList = () => {
         <Layout>
         <TopHeader />
         <Content
-          style={{
-            margin: 24,
-            minHeight: '100vh',
-          }}
+          className="mainContent mt-6 exportContent"
         >
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 lg:gap-4">
-            <div className="flex items-center rounded px-4 py-2 shadow bg-white">
-              <div>
-                <div className="text-[--secondary-color] font-medium uppercase">Total</div>
-                <div className="text-[--primary-color] font-bold text-2xl">
-                  876, 323, 234
-                </div>
-              </div>
-            </div>
-            <div className="flex items-center rounded px-4 py-2 shadow bg-white">
-              <div>
-                <div className="text-[--secondary-color] font-medium uppercase">Total Current</div>
-                <div className="text-[--primary-color] font-bold text-2xl">
-                  678, 987, 345
-                </div>
-              </div>
-            </div>
-            <div className="flex items-center rounded px-4 py-2 shadow bg-white">
-              <div>
-                <div className="text-[--secondary-color] font-medium uppercase">Saved</div>
-                <div className="text-[--primary-color] font-bold text-2xl">
-                  567, 786, 974
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="my-4 flex justify-between searchInput">
+          <div className="mb-4 flex justify-between searchInput">
             <div className="w-full">
-              <Input className="w-full" size="large" placeholder="HR Manager" prefix={<SearchOutlined />} />
+              <Input className="w-full" size="large" placeholder="HR Manager" suffix={
+              <Tooltip title="Search"><SearchOutlined className="searchIcon"/></Tooltip>
+              } />
             </div>
-            <div className="bg-white w-20 flex justify-center px-4 gap-4 items-center ms-4 rounded-md">
-              <ExportOutlined  className="cursor-pointer"/>
-              <ReloadOutlined className="cursor-pointer"/>
+            <div className="bg-white w-20 flex justify-center px-4 gap-4 items-center ms-4 shadow">
+              <Tooltip title="Export"><ExportOutlined  className="cursor-pointer"/></Tooltip>
+              <Tooltip title="Refresh"><ReloadOutlined className="cursor-pointer"/></Tooltip>
             </div>
           </div>
           <Table dataSource={dataSource} columns={columns} className="exportTable"/>
@@ -206,4 +182,4 @@ const ExportList = () => {
     </Layout>
   );
 };
-export default ExportList;
+export default Search;

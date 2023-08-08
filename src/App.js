@@ -9,7 +9,8 @@ import Login from "./pages/Login";
 import ForgotPassword from "./pages/ForgotPassword";
 import "./App.css";
 import Profile from "./pages/Profile";
-import ExportList from "./pages/ExportList";
+import Search from "./pages/Search";
+import ExportLists from "./pages/ExportLists";
 import UserDetail from "./pages/UserDetail";
 
 export default function App() {;
@@ -21,7 +22,8 @@ export default function App() {;
           <Route exact path="/forgot-password" element={<ForgotPassword />} />
           <Route exact path="/dashboard" element={<Dashboard />} />
           <Route exact path="/profile" element={<Profile />} />
-          <Route exact path="/export-list" element={<ExportList/>} />
+          <Route exact path="/search" element={<Search/>} />
+          <Route exact path="/export-lists" element={<ExportLists/>} />
           <Route exact path="/user-detail" element={<UserDetail/>} />
         </Routes>
     </Router>
