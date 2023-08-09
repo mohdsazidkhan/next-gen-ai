@@ -74,11 +74,15 @@ body {
 
 .ant-layout .ant-layout-sider {
     background: #212733;
-    max-width: 280px !important;
-    min-width: 280px !important;
-    width: 280px !important;
+    max-width: 250px !important;
+    min-width: 250px !important;
+    width: 250px !important;
 }
-
+.filterBtns .ant-btn {
+    font-size: 13px;
+    height: 30px;
+    padding: 4px 10px;
+}
 .ant-menu-dark .ant-menu-item-selected,
 .ant-menu-dark>.ant-menu .ant-menu-item-selected {
     background-color: #35c1bd;
@@ -105,13 +109,26 @@ body {
     -ms-border-radius: 0px !important;
     -o-border-radius: 0px !important;
 }
-
+.ant-select-selector .ant-select-selection-search-input {
+    height: 20px !important;
+}
 .searchInput input,
 .ant-select-selection-search input {
     color: var(--secondary-color) !important;
-    font-weight: 500 !important;
 }
-
+.filterTabs >.ant-tabs-nav .ant-tabs-nav-list{
+    width: 100%;
+}
+.filterTabs>.ant-tabs-nav .ant-tabs-tab+.ant-tabs-tab{
+    margin-left: 0 !important;
+    justify-content: center;
+}
+.filterTabs .ant-tabs-tab.ant-tabs-tab-active{
+    justify-content: center;
+}
+.filterTabs>.ant-tabs-nav .ant-tabs-tab{
+    width: 50%;
+}
 .loginBg {
     background-image: url('/public/login_bg.jpg');
     height: 100vh;
@@ -167,8 +184,8 @@ ul.userList li:after {
 }
 
 .mainContent {
-    margin-left: 300px;
-    width: calc(100% - 320px);
+    margin-left: 270px;
+    width: calc(100% - 290px);
 }
 
 .exportTable .ant-table .ant-table-content {
@@ -203,16 +220,41 @@ ul.userList li:after {
 .exportTable .ant-table-tbody>tr>td {
     padding: 4px 12px !important;
 }
-
 .exportTable .ant-table-tbody>tr.ant-table-row:hover>td {
     background: #34c3c7;
     color: #fff;
 }
-
+.filterInputField .ant-input {
+    padding: 0px 10px;
+}
+.multi-range-slider {
+    border: none;
+    border-radius: 0px;
+    padding: 10px 0;
+    box-shadow: none;
+    width: 86%;
+}
 .exportTable .ant-table-tbody>tr.ant-table-row:hover>td svg {
     fill: #fff;
 }
-
+.multi-range-slider .labels,.multi-range-slider .ruler{
+    display: none;
+}
+.multi-range-slider .bar-inner {
+    background-color: #35c1bd;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    position: relative;
+    border: solid 1px #1f706e;
+    justify-content: space-between;
+    box-shadow: inset 0px 0px 5px #1f706e;
+}
+.multi-range-slider .thumb::before {
+    border: solid 1px #35c1bd;
+    box-shadow: 0px 0px 3px #35c1bd, inset 0px 0px 5px gray;
+    margin: -7px -12px;
+}
 .searchInput .ant-input-affix-wrapper-lg {
     padding: 0;
     border-radius: 0;
@@ -221,6 +263,12 @@ ul.userList li:after {
     -ms-border-radius: 0;
     -o-border-radius: 0;
 }
+.multi-range-slider .thumb .caption * {
+    font-size: 80%;
+    font-weight: 500;
+    background-color: #0d5957;
+}
+
 
 .searchInput input {
     padding-left: 10px !important;
@@ -299,6 +347,7 @@ ul.userList li:after {
 }
 .ant-select-single {
     font-size: 10px;
+    width: 220px !important;
 }
 .ant-table-wrapper .ant-table-thead>tr>th {
     padding: 8px;
