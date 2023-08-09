@@ -15,7 +15,6 @@ import Sidebar from "../components/Sidebar";
 import {
   CheckCircleOutlined,
   EyeOutlined,
-  SearchOutlined,
   ExportOutlined,
   ReloadOutlined,
 } from "@ant-design/icons";
@@ -31,9 +30,6 @@ const Search = () => {
   };
   const showModal = () => {
     setIsModalOpen(true);
-  };
-  const handleOk = () => {
-    setIsModalOpen(false);
   };
   const handleCancel = () => {
     setIsModalOpen(false);
@@ -196,28 +192,28 @@ const Search = () => {
 
   const treeData = [
     {
-      value: 'name',
-      title: 'Name',
+      value: "name",
+      title: "Name",
     },
     {
-      value: 'email',
-      title: 'Email',
+      value: "email",
+      title: "Email",
     },
     {
-      value: 'phone',
-      title: 'Phone',
+      value: "phone",
+      title: "Phone",
     },
     {
-      value: 'city',
-      title: 'City',
+      value: "city",
+      title: "City",
     },
     {
-      value: 'state',
-      title: 'State',
+      value: "state",
+      title: "State",
     },
     {
-      value: 'country',
-      title: 'Country',
+      value: "country",
+      title: "Country",
     },
   ];
 
@@ -235,7 +231,11 @@ const Search = () => {
                 placeholder="HR Manager"
                 suffix={
                   <Tooltip title="Search">
-                    <SearchOutlined className="searchIcon" />
+                    <Link to="/search" className="cursor-pointer">
+                      <Button type="primary" className="bg-[--primary-color]">
+                        Search
+                      </Button>
+                    </Link>
                   </Tooltip>
                 }
               />
@@ -276,7 +276,7 @@ const Search = () => {
               </Form.Item>
               <Form.Item label="Choose Columns">
                 <TreeSelect
-                className="multiSelect"
+                  className="multiSelect"
                   showSearch
                   style={{
                     width: "100%",
@@ -294,7 +294,6 @@ const Search = () => {
                   Export
                 </Button>
               </Form.Item>
-              
             </Form>
           </Modal>
         </Content>

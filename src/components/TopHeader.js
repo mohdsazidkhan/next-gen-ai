@@ -1,5 +1,5 @@
 import React from "react";
-import { Avatar, Button, Dropdown, Layout, Space, Tooltip, theme } from "antd";
+import { Avatar, Dropdown, Layout, Space, Tooltip, theme } from "antd";
 import { SearchOutlined, BellOutlined, UploadOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 const { Header } = Layout;
@@ -64,7 +64,7 @@ const TopHeader = () => {
           <div className="mt-0 lg:mt-1">
           <Tooltip title="Search">
             <Link to="/search" className="cursor-pointer">
-              <Button type="primary" className="bg-[--primary-color]">Search</Button>
+              <SearchOutlined/>
             </Link>
           </Tooltip>
           </div>
