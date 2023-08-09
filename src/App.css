@@ -201,7 +201,7 @@ ul.userList li:after {
 }
 
 .exportTable .ant-table-tbody>tr>td {
-    padding: 8px !important;
+    padding: 4px 12px !important;
 }
 
 .exportTable .ant-table-tbody>tr.ant-table-row:hover>td {
@@ -284,7 +284,22 @@ ul.userList li:after {
     -ms-border-radius: 0;
     -o-border-radius: 0;
 }
-
+.ant-switch.ant-switch-checked,.ant-switch.ant-switch-checked:hover:not(.ant-switch-disabled) {
+    background: #35c1bd;
+}
+.ant-select-selector {
+    height: 24px !important;
+}
+.ant-select-single .ant-select-selector .ant-select-selection-placeholder {
+    line-height: 20px !important;
+}
+.ant-table-wrapper .ant-table{
+    font-size: 10px;
+    line-height: 12px;
+}
+.ant-select-single {
+    font-size: 10px;
+}
 .ant-table-wrapper .ant-table-thead>tr>th {
     padding: 8px;
 }

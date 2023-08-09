@@ -1,6 +1,9 @@
 import { FilterOutlined,DownloadOutlined } from "@ant-design/icons";
-import { AutoComplete, Button } from "antd";
+import { AutoComplete, Button, Switch } from "antd";
 function Filter(props) {
+  const onChange = (checked) => {
+    console.log(`switch to ${checked}`);
+  };
   const chooseSource = [
     {
       value: "Linkedin",
@@ -110,7 +113,7 @@ function Filter(props) {
         <div className="font-bold text-white text-lg">{props.title} Filters</div>
       </div>
       <div className="filterScroll">
-      <div className="w-full mt-4 mb-4 flex justify-center">
+      <div className="w-full mt-2 mb-4 flex justify-center">
         <AutoComplete
           style={{ width: "250px" }}
           options={chooseSource}
@@ -120,7 +123,7 @@ function Filter(props) {
           }
         />
       </div>
-      <div className="w-full mt-4 mb-4 flex justify-center">
+      <div className="w-full mt-2 mb-4 flex justify-center">
         <AutoComplete
           style={{ width: "250px" }}
           options={jobTitles}
@@ -130,7 +133,7 @@ function Filter(props) {
           }
         />
       </div>
-      <div className="w-full mt-4 mb-4 flex justify-center">
+      <div className="w-full mt-2 mb-4 flex justify-center">
         <AutoComplete
           style={{ width: "250px" }}
           options={industries}
@@ -140,7 +143,7 @@ function Filter(props) {
           }
         />
       </div>
-      <div className="w-full mt-4 mb-4 flex justify-center">
+      <div className="w-full mt-2 mb-4 flex justify-center">
         <AutoComplete
           style={{ width: "250px" }}
           options={orgs}
@@ -150,7 +153,7 @@ function Filter(props) {
           }
         />
       </div>
-      <div className="w-full mt-4 mb-4 flex justify-center">
+      <div className="w-full mt-2 mb-4 flex justify-center">
         <AutoComplete
           style={{ width: "250px" }}
           options={cities}
@@ -160,7 +163,7 @@ function Filter(props) {
           }
         />
       </div>
-      <div className="w-full mt-4 mb-4 flex justify-center">
+      <div className="w-full mt-2 mb-4 flex justify-center">
         <AutoComplete
           style={{ width: "250px" }}
           options={states}
@@ -170,7 +173,7 @@ function Filter(props) {
           }
         />
       </div>
-      <div className="w-full mt-4 mb-4 flex justify-center">
+      <div className="w-full mt-2 mb-4 flex justify-center">
         <AutoComplete
           style={{ width: "250px" }}
           options={countries}
@@ -180,7 +183,7 @@ function Filter(props) {
           }
         />
       </div>
-      <div className="w-full mt-4 mb-4 flex justify-center">
+      <div className="w-full mt-2 mb-4 flex justify-center">
         <AutoComplete
           style={{ width: "250px" }}
           options={pts}
@@ -190,7 +193,7 @@ function Filter(props) {
           }
         />
       </div>
-      <div className="w-full mt-4 mb-4 flex justify-center">
+      <div className="w-full mt-2 mb-4 flex justify-center">
         <AutoComplete
           style={{ width: "250px" }}
           options={pInt}
@@ -200,6 +203,18 @@ function Filter(props) {
           }
         />
       </div>
+      <div className="flex justify-between items-center px-3">
+      <span className="text-white mr-2">Valid Emails Only</span>
+      <Switch defaultChecked onChange={onChange} />
+      </div>
+      <div className="flex justify-between items-center px-3 mt-3">
+      <span className="text-white mr-2">Phone No Exist</span>
+      <Switch defaultChecked onChange={onChange} />
+      </div>
+      <div className="flex justify-between items-center px-3 mt-3">
+      <span className="text-white mr-2">Twitter Exist</span>
+      <Switch defaultChecked onChange={onChange} />
+      </div> 
       </div>
       <div className="flex justify-evenly items-center gap-3 pt-4 filterBtns">
         <div><Button className="bg-[--primary-color]" type="primary" icon={<DownloadOutlined />} size={'medium'}>
