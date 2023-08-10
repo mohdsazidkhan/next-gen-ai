@@ -150,6 +150,11 @@ body {
     width: 50%;
     justify-content: center;
 }
+.ant-tabs-card >.ant-tabs-nav .ant-tabs-tab-active, 
+.ant-tabs-card >div>.ant-tabs-nav .ant-tabs-tab-active {
+    color: #ffffff;
+    background: #35c1bd;
+}
 .loginBg {
     background-image: url('/public/login_bg.jpg');
     height: 100vh;
