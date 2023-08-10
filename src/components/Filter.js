@@ -1,11 +1,44 @@
 import { FilterOutlined, DownloadOutlined } from "@ant-design/icons";
-import { AutoComplete, Button, Input, Slider, Switch } from "antd";
+import { AutoComplete, Button, Input, Slider, Switch, TreeSelect } from "antd";
 import { useState } from "react";
 import MultiRangeSlider from "multi-range-slider-react";
 function Filter(props) {
   const [validEmail, setValidEmail] = useState(true);
   const [minVal, setMinVal] = useState(0);
   const [maxVal, setMaxVal] = useState(100);
+  const [jobtitle, setJobTitleValue] = useState([]);
+  const [industries, setIndustries] = useState([]);
+  const [organizations, setOrganizations] = useState([]);
+  const [cities, setCities] = useState([]);
+  const [states, setStates] = useState([]);
+  const [countries, setCountries] = useState([]);
+  const [pts, setPts] = useState([]);
+  const [pInts, setPInts] = useState([]);
+
+  const onJobTitleChange = (newValue) => {
+    setJobTitleValue(newValue);
+  };
+  const onPIntsChange = (newValue) => {
+    setPInts(newValue);
+  };
+  const onPtsChange = (newValue) => {
+    setPts(newValue);
+  };
+  const onCountriesChange = (newValue) => {
+    setCountries(newValue);
+  };
+  const onStatesChange = (newValue) => {
+    setStates(newValue);
+  };
+  const onCitiesChange = (newValue) => {
+    setCities(newValue);
+  };
+  const onOrganizationsChange = (newValue) => {
+    setOrganizations(newValue);
+  };
+  const onIndustriesChange = (newValue) => {
+    setIndustries(newValue);
+  };
   const onChange = (checked) => {
     console.log(`switch to ${checked}`);
   };
@@ -27,92 +60,116 @@ function Filter(props) {
       value: "Twitter",
     },
   ];
-  const jobTitles = [
+  const jtData = [
     {
       value: "HR Manager",
+      title: "HR Manager",
     },
     {
       value: "Front End Developer",
+      title: "Front End Developer",
     },
     {
       value: "Backend Developer",
+      title: "Backend Developer",
     },
   ];
-  const industries = [
+  const industriesData = [
     {
       value: "Technology",
+      title: "Technology",
     },
     {
       value: "Real State",
+      title: "Real State",
     },
     {
       value: "Marketing",
+      title: "Marketing",
     },
   ];
-  const orgs = [
+  const organizationsData = [
     {
       value: "Google",
+      title: "Google",
     },
     {
       value: "Amazon",
+      title: "Amazon",
     },
     {
       value: "Microsoft",
+      title: "Microsoft",
     },
   ];
-  const cities = [
+  const citiesData = [
     {
       value: "Delhi",
+      title: "Delhi",
     },
     {
       value: "Gurgaon",
+      title: "Gurgaon",
     },
     {
       value: "Noida",
+      title: "Noida",
     },
   ];
-  const states = [
+  const statesData = [
     {
       value: "Delhi",
+      title: "Delhi",
     },
     {
       value: "Haryana",
+      title: "Haryana",
     },
     {
       value: "Uttar Pradesh",
+      title: "Uttar Pradesh",
     },
   ];
-  const countries = [
+  const countriesData = [
     {
       value: "India",
+      title: "India",
     },
     {
       value: "USA",
+      title: "USA",
     },
     {
       value: "China",
+      title: "China",
     },
   ];
-  const pts = [
+  const ptsData = [
     {
       value: "HTML",
+      title: "HTML",
     },
     {
       value: "CSS",
+      title: "CSS",
     },
     {
       value: "Javascript",
+      title: "Javascript",
     },
   ];
-  const pInt = [
+  const pIntData = [
     {
       value: "Cricket",
+      title: "Cricket",
     },
     {
       value: "Movies",
+      title: "Movies",
     },
     {
       value: "Web Series",
+      title: "Web Series",
     },
   ];
   const lVEmail = [
@@ -153,7 +210,7 @@ function Filter(props) {
       </div>
       <div className="filterScroll mt-2">
         <div className="text-white ml-3 font-bold">Choose Source</div>
-        <div className="w-full mt-2 mb-2 flex justify-center">
+        <div className="w-full mt-1 mb-3 flex justify-center">
           <AutoComplete
             style={{ width: "250px" }}
             options={chooseSource}
@@ -165,101 +222,109 @@ function Filter(props) {
           />
         </div>
         <div className="text-white ml-3 font-bold">Job Titles</div>
-        <div className="w-full mt-2 mb-2 flex justify-center">
-          <AutoComplete
-            style={{ width: "250px" }}
-            options={jobTitles}
+        <div className="mt-1 mb-3 flex justify-center filterMulti">
+          <TreeSelect
+            className="multiSelect w-full px-3"
+            showSearch
+            value={jobtitle}
             placeholder="Job Titles"
-            filterOption={(inputValue, option) =>
-              option.value.toUpperCase().indexOf(inputValue.toUpperCase()) !==
-              -1
-            }
+            allowClear
+            multiple
+            onChange={onJobTitleChange}
+            treeData={jtData}
           />
         </div>
         <div className="text-white ml-3 font-bold">Industries</div>
-        <div className="w-full mt-2 mb-2 flex justify-center">
-          <AutoComplete
-            style={{ width: "250px" }}
-            options={industries}
+        <div className="mt-1 mb-3 flex justify-center filterMulti">
+          <TreeSelect
+            className="multiSelect w-full px-3"
+            showSearch
+            value={industries}
             placeholder="Industries"
-            filterOption={(inputValue, option) =>
-              option.value.toUpperCase().indexOf(inputValue.toUpperCase()) !==
-              -1
-            }
+            allowClear
+            multiple
+            onChange={onIndustriesChange}
+            treeData={industriesData}
           />
         </div>
         <div className="text-white ml-3 font-bold">Orgnization Name</div>
-        <div className="w-full mt-2 mb-2 flex justify-center">
-          <AutoComplete
-            style={{ width: "250px" }}
-            options={orgs}
+        <div className="mt-1 mb-3 flex justify-center filterMulti">
+          <TreeSelect
+            className="multiSelect w-full px-3"
+            showSearch
+            value={organizations}
             placeholder="Orgnization Name"
-            filterOption={(inputValue, option) =>
-              option.value.toUpperCase().indexOf(inputValue.toUpperCase()) !==
-              -1
-            }
+            allowClear
+            multiple
+            onChange={onOrganizationsChange}
+            treeData={organizationsData}
           />
         </div>
         <div className="text-white ml-3 font-bold">Cities</div>
-        <div className="w-full mt-2 mb-2 flex justify-center">
-          <AutoComplete
-            style={{ width: "250px" }}
-            options={cities}
+        <div className="mt-1 mb-3 flex justify-center filterMulti">
+          <TreeSelect
+            className="multiSelect w-full px-3"
+            showSearch
+            value={cities}
             placeholder="Cities"
-            filterOption={(inputValue, option) =>
-              option.value.toUpperCase().indexOf(inputValue.toUpperCase()) !==
-              -1
-            }
+            allowClear
+            multiple
+            onChange={onCitiesChange}
+            treeData={citiesData}
           />
         </div>
         <div className="text-white ml-3 font-bold">States</div>
-        <div className="w-full mt-2 mb-2 flex justify-center">
-          <AutoComplete
-            style={{ width: "250px" }}
-            options={states}
+        <div className="mt-1 mb-3 flex justify-center filterMulti">
+          <TreeSelect
+            className="multiSelect w-full px-3"
+            showSearch
+            value={states}
             placeholder="States"
-            filterOption={(inputValue, option) =>
-              option.value.toUpperCase().indexOf(inputValue.toUpperCase()) !==
-              -1
-            }
+            allowClear
+            multiple
+            onChange={onStatesChange}
+            treeData={statesData}
           />
         </div>
         <div className="text-white ml-3 font-bold">Countries</div>
-        <div className="w-full mt-2 mb-2 flex justify-center">
-          <AutoComplete
-            style={{ width: "250px" }}
-            options={countries}
+        <div className="mt-1 mb-3 flex justify-center filterMulti">
+          <TreeSelect
+            className="multiSelect w-full px-3"
+            showSearch
+            value={countries}
             placeholder="Countries"
-            filterOption={(inputValue, option) =>
-              option.value.toUpperCase().indexOf(inputValue.toUpperCase()) !==
-              -1
-            }
+            allowClear
+            multiple
+            onChange={onCountriesChange}
+            treeData={countriesData}
           />
         </div>
         <div className="text-white ml-3 font-bold">
           Person Technology Skills
         </div>
-        <div className="w-full mt-2 mb-2 flex justify-center">
-          <AutoComplete
-            style={{ width: "250px" }}
-            options={pts}
+        <div className="mt-1 mb-3 flex justify-center filterMulti">
+          <TreeSelect
+            className="multiSelect w-full px-3"
+            showSearch
+            value={pts}
             placeholder="Person Technology Skills"
-            filterOption={(inputValue, option) =>
-              option.value.toUpperCase().indexOf(inputValue.toUpperCase()) !==
-              -1
-            }
+            allowClear
+            multiple
+            onChange={onPtsChange}
+            treeData={ptsData}
           />
         </div>
         <div className="text-white ml-3 font-bold">Person Intrests</div>
-        <div className="w-full mt-2 mb-2 flex justify-center">
-          <AutoComplete
-            style={{ width: "250px" }}
-            options={pInt}
+        <div className="mt-1 mb-3 flex justify-center filterMulti">
+          <TreeSelect
+            className="multiSelect w-full px-3"
+            showSearch
+            value={pInts}
             placeholder="Person Intrests"
-            filterOption={(inputValue, option) =>
-              option.value.toUpperCase().indexOf(inputValue.toUpperCase()) !==
-              -1
-            }
+            allowClear
+            multiple
+            onChange={onPIntsChange}
+            treeData={pIntData}
           />
         </div>
         <div className="flex justify-between items-center px-3">
@@ -269,7 +334,7 @@ function Filter(props) {
         {validEmail && (
           <>
             <div className="text-white ml-3 text-sm">Last Validate Email</div>
-            <div className="w-full mt-2 mb-2 flex justify-center">
+            <div className="w-full mt-1 mb-3 flex justify-center">
               <AutoComplete
                 style={{ width: "250px" }}
                 options={lVEmail}
@@ -304,27 +369,27 @@ function Filter(props) {
           <Switch defaultChecked onChange={onChange} />
         </div>
         <div className="text-white ml-3 font-bold mt-2">Enter Name</div>
-        <div className="mt-2 mb-2 px-3 flex justify-center filterInputField">
+        <div className="mt-1 mb-3 px-3 flex justify-center filterInputField">
           <Input placeholder="Enter name" />
         </div>
         <div className="text-white ml-3 font-bold mt-2">Enter Contact Id</div>
-        <div className="mt-2 mb-2 px-3 flex justify-center filterInputField">
+        <div className="mt-1 mb-3 px-3 flex justify-center filterInputField">
           <Input placeholder="Enter contact id" />
         </div>
         <div className="text-white ml-3 font-bold mt-2">
           Zip Codes (Only Numeric Values)
         </div>
-        <div className="mt-2 mb-2 px-3 flex justify-center filterInputField">
+        <div className="mt-1 mb-3 px-3 flex justify-center filterInputField">
           <Input placeholder="Enter zipcodes" />
         </div>
         <div className="text-white ml-3 font-bold mt-2">
           Excluded Email Domain
         </div>
-        <div className="mt-2 mb-2 px-3 flex justify-center filterInputField">
+        <div className="mt-1 mb-3 px-3 flex justify-center filterInputField">
           <Input placeholder="Enter excluded email domail" />
         </div>
         <div className="text-white ml-3 font-bold mt-2">Last Comunicated</div>
-        <div className="w-full mt-2 mb-2 flex justify-center">
+        <div className="w-full mt-1 mb-3 flex justify-center">
           <AutoComplete
             style={{ width: "250px" }}
             options={lVEmail}
@@ -348,27 +413,29 @@ function Filter(props) {
             }}
           />
         </div>
-        <div className="text-white ml-3">Experience Between {minVal+" to "+maxVal}</div>
+        <div className="text-white ml-3">
+          Experience Between {minVal + " to " + maxVal}
+        </div>
       </div>
       <div className="flex justify-evenly items-center gap-3 pt-4 filterBtns">
         <div>
           <Button
             className="bg-[--primary-color]"
             type="primary"
-            icon={<DownloadOutlined />}
+            //icon={<DownloadOutlined />}
             size={"medium"}
           >
-            Apply Filter
+            APPLY FILTER
           </Button>
         </div>
         <div>
           <Button
             className="bg-[--primary-color] text-white"
             type="danger"
-            icon={<DownloadOutlined className="text-white" />}
+            //icon={<DownloadOutlined className="text-white" />}
             size={"medium"}
           >
-            Clear Search
+            CLEAR SEARCH
           </Button>
         </div>
       </div>
