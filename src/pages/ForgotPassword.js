@@ -33,7 +33,8 @@ function ForgotPassword() {
           <div className="text-center font-bold text-lg">Forgot Password</div>
           <Form className="flex flex-col mt-4 justify-center">
             <FormItem className="mb-3">
-              <Input placeholder="EMAIL ID" prefix={<MailOutlined />} className="rounded-none"/>
+              <label>Email ID</label>
+              <Input placeholder="Email Id" prefix={<MailOutlined />} className="rounded-none"/>
             </FormItem>
             <Button
               className="bg-[--secondary-color] rounded-none hover:bg-[--primary-color]"

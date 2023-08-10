@@ -38,10 +38,12 @@ function Login() {
           <div className="text-center font-bold text-lg">Log In</div>
           <Form className="flex flex-col mt-4 justify-center">
             <FormItem className="mb-3">
-              <Input placeholder="USER NAME" prefix={<UserOutlined />} className="rounded-none"/>
+              <label>User Name</label>
+              <Input placeholder="User Name" prefix={<UserOutlined />} className="rounded-none"/>
             </FormItem>
             <FormItem className="mb-2">
-              <Input placeholder="PASSWORD" prefix={<LockOutlined />}  className="rounded-none"/>
+              <label>Password</label>
+              <Input placeholder="Password" prefix={<LockOutlined />}  className="rounded-none"/>
             </FormItem>
             <Button
               className="bg-[--secondary-color] rounded-none hover:bg-[--primary-color]"
