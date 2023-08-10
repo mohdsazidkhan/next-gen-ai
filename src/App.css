@@ -79,9 +79,9 @@ body {
     width: 250px !important;
 }
 .filterBtns .ant-btn {
-    font-size: 13px;
+    font-size: 12px;
     height: 30px;
-    padding: 4px 21px;
+    padding: 4px 23px;
     background-color: #49cdb4;
     font-weight: 600;
     display: inline-flex;
@@ -141,7 +141,7 @@ body {
     -o-border-radius: 0px !important;
 }
 .ant-select-selector .ant-select-selection-search-input {
-    height: 25px !important;
+    height: 27px !important;
 }
 .searchInput input,
 .ant-select-selection-search input {
@@ -356,6 +356,7 @@ ul.userList li:after {
 .filterMulti .ant-select-multiple .ant-select-selection-item-content,
 .filterMulti .ant-select-multiple .ant-select-selection-item-remove{
     color: #fff;
+    font-size: 12px;
 }
 .filterTabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
     color: #ffffff;
@@ -423,7 +424,9 @@ ul.userList li:after {
     padding: 8px;
     font-size: 12px;
 }
-
+.filterTabs input{
+    font-size: 12px;
+}
 .filterTabs>.ant-tabs-nav::before {
     border-bottom: none;
 }
