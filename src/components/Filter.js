@@ -209,7 +209,7 @@ function Filter(props) {
         </div>
       </div>
       <div className="filterScroll mt-2">
-        <div className="text-white ml-3 font-bold">Choose Source</div>
+        <div className="text-white ml-3">Choose Source</div>
         <div className="w-full mt-1 mb-3 flex justify-center">
           <AutoComplete
             style={{ width: "250px" }}
@@ -221,7 +221,7 @@ function Filter(props) {
             }
           />
         </div>
-        <div className="text-white ml-3 font-bold">Job Titles</div>
+        <div className="text-white ml-3">Job Titles</div>
         <div className="mt-1 mb-3 flex justify-center filterMulti">
           <TreeSelect
             className="multiSelect w-full px-3"
@@ -234,7 +234,7 @@ function Filter(props) {
             treeData={jtData}
           />
         </div>
-        <div className="text-white ml-3 font-bold">Industries</div>
+        <div className="text-white ml-3">Industries</div>
         <div className="mt-1 mb-3 flex justify-center filterMulti">
           <TreeSelect
             className="multiSelect w-full px-3"
@@ -247,7 +247,7 @@ function Filter(props) {
             treeData={industriesData}
           />
         </div>
-        <div className="text-white ml-3 font-bold">Orgnization Name</div>
+        <div className="text-white ml-3">Orgnization Name</div>
         <div className="mt-1 mb-3 flex justify-center filterMulti">
           <TreeSelect
             className="multiSelect w-full px-3"
@@ -260,7 +260,7 @@ function Filter(props) {
             treeData={organizationsData}
           />
         </div>
-        <div className="text-white ml-3 font-bold">Cities</div>
+        <div className="text-white ml-3">Cities</div>
         <div className="mt-1 mb-3 flex justify-center filterMulti">
           <TreeSelect
             className="multiSelect w-full px-3"
@@ -273,7 +273,7 @@ function Filter(props) {
             treeData={citiesData}
           />
         </div>
-        <div className="text-white ml-3 font-bold">States</div>
+        <div className="text-white ml-3">States</div>
         <div className="mt-1 mb-3 flex justify-center filterMulti">
           <TreeSelect
             className="multiSelect w-full px-3"
@@ -286,7 +286,7 @@ function Filter(props) {
             treeData={statesData}
           />
         </div>
-        <div className="text-white ml-3 font-bold">Countries</div>
+        <div className="text-white ml-3">Countries</div>
         <div className="mt-1 mb-3 flex justify-center filterMulti">
           <TreeSelect
             className="multiSelect w-full px-3"
@@ -299,7 +299,7 @@ function Filter(props) {
             treeData={countriesData}
           />
         </div>
-        <div className="text-white ml-3 font-bold">
+        <div className="text-white ml-3">
           Person Technology Skills
         </div>
         <div className="mt-1 mb-3 flex justify-center filterMulti">
@@ -314,7 +314,7 @@ function Filter(props) {
             treeData={ptsData}
           />
         </div>
-        <div className="text-white ml-3 font-bold">Person Intrests</div>
+        <div className="text-white ml-3">Person Intrests</div>
         <div className="mt-1 mb-3 flex justify-center filterMulti">
           <TreeSelect
             className="multiSelect w-full px-3"
@@ -368,27 +368,27 @@ function Filter(props) {
           <span className="text-white mr-2">Facebook Exist</span>
           <Switch defaultChecked onChange={onChange} />
         </div>
-        <div className="text-white ml-3 font-bold mt-2">Enter Name</div>
+        <div className="text-white ml-3 mt-2">Enter Name</div>
         <div className="mt-1 mb-3 px-3 flex justify-center filterInputField">
           <Input placeholder="Enter name" />
         </div>
-        <div className="text-white ml-3 font-bold mt-2">Enter Contact Id</div>
+        <div className="text-white ml-3 mt-2">Enter Contact Id</div>
         <div className="mt-1 mb-3 px-3 flex justify-center filterInputField">
           <Input placeholder="Enter contact id" />
         </div>
-        <div className="text-white ml-3 font-bold mt-2">
+        <div className="text-white ml-3 mt-2">
           Zip Codes (Only Numeric Values)
         </div>
         <div className="mt-1 mb-3 px-3 flex justify-center filterInputField">
           <Input placeholder="Enter zipcodes" />
         </div>
-        <div className="text-white ml-3 font-bold mt-2">
+        <div className="text-white ml-3 mt-2">
           Excluded Email Domain
         </div>
         <div className="mt-1 mb-3 px-3 flex justify-center filterInputField">
           <Input placeholder="Enter excluded email domail" />
         </div>
-        <div className="text-white ml-3 font-bold mt-2">Last Comunicated</div>
+        <div className="text-white ml-3 mt-2">Last Comunicated</div>
         <div className="w-full mt-1 mb-3 flex justify-center">
           <AutoComplete
             style={{ width: "250px" }}
@@ -400,7 +400,7 @@ function Filter(props) {
             }
           />
         </div>
-        <div className="text-white ml-3 font-bold mt-2">Experience</div>
+        <div className="text-white ml-3 mt-2">Experience</div>
         <div className="w-full mt-2 flex justify-center">
           <MultiRangeSlider
             min={0}
