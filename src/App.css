@@ -335,7 +335,7 @@ ul.userList li:after {
 }
 
 .filterScroll {
-    height: calc(100vh - 295px);
+    height: calc(100vh - 250px);
     padding-bottom: 0px;
     overflow-y: auto;
 }
@@ -375,6 +375,12 @@ ul.userList li:after {
 .ant-select-dropdown{
     width: 218px !important;
     min-width: 218px !important;
+}
+.filterTabs>.ant-tabs-nav{
+    margin-bottom: 5px;
+}
+.filterTabs>.ant-tabs-nav .ant-tabs-tab{
+    padding: 5px;
 }
 .ant-switch.ant-switch-checked,.ant-switch.ant-switch-checked:hover:not(.ant-switch-disabled) {
     background: #35c1bd;

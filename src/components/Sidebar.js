@@ -49,11 +49,11 @@ const Sidebar = () => {
         style={{position: 'fixed',transform: collapsed ? 'translateX(0)' : ''}}
         className="bg-[#212733] left-0 bottom-0 top-0 h-screen z-10"
       >
-        <div className="flex items-center justify-center py-4 flex-col">
-          <Link to="/dashboard"><Tooltip title="Dashboard"><Image className="flex items-center justify-center" src='/logo-m.png' width={52} preview={false}/></Tooltip></Link>
+        <div className="flex items-center justify-center py-2 flex-col">
+          <Link to="/dashboard"><Tooltip title="Dashboard"><Image className="flex items-center justify-center" src='/logo-m.png' width={44} preview={false}/></Tooltip></Link>
           <div className="logoText text-center">
-            <div className="text-white font-bold text-2xl">NextGen AI</div>
-            <div className="text-white font-medium text-base uppercase">Solutions Group</div>
+            <div className="text-white font-medium text-xl">NextGen AI</div>
+            <div className="text-white uppercase">Solutions Group</div>
           </div>
         </div>
         <Tabs

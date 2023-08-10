@@ -202,9 +202,9 @@ function Filter(props) {
     <div className="h-screen top-[4.1rem] z-10 w-[300px">
       <div className="flex items-center relative ml-3">
         <div className="me-2">
-          <FilterOutlined className="text-xl leading-none text-white" />
+          <FilterOutlined className="text-lg leading-none text-white" />
         </div>
-        <div className="font-bold text-white text-lg">
+        <div className="font-bold text-white text-md mt-1">
           {props.title} Filters
         </div>
       </div>
