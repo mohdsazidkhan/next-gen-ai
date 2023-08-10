@@ -12,13 +12,13 @@ function ForgotPassword() {
     <div className="loginBg flex justify-center items-center ">
       <div className="grid grid-col-2 lg:grid-cols-2 gap-8 lg:gap-28">
         <div className="text-center">
-          <img src="/logo192.png" alt="Logo" className="w-20 h-20 mx-auto" />
+          <img src="/logo-m.png" alt="Logo" className="w-20 h-20 mx-auto" />
           <div className="text-white text-lg mb-4">
-            NextGen AI <br /> Data Group
+            NextGen AI <br /> Solutions Group
           </div>
           <div className="text-white text-2xl mb-2 font-bold">
             Welcome to
-            <br /> NextGen AI Data Group
+            <br /> NextGen AI Solutions Group
           </div>
           <div className="text-white mb-2">
             Solving Recruitment using Technology
