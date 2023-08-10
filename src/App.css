@@ -5,9 +5,11 @@
 
 body {
     background-color: #f2f2f2;
-    ;
+    font-size: 12px;
 }
-
+.ant-input{
+    font-size: 12px;
+}
 .gradientColor {
     background: linear-gradient(to right, #03ff03, #0037ff);
     -webkit-background-clip: text;
@@ -174,9 +176,6 @@ body {
     background-repeat: no-repeat;
 }
 
-.loginBg input.ant-input::placeholder {
-    text-align: center !important;
-}
 
 ul.userList {
     margin-left: 0;
