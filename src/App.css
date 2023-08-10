@@ -263,6 +263,7 @@ ul.userList li:after {
 
 .exportTable .ant-table-tbody>tr>td {
     padding: 4px 12px !important;
+    font-size: 12px;
 }
 .exportTable .ant-table-tbody>tr.ant-table-row:hover>td {
     background: #34c3c7;
@@ -420,6 +421,7 @@ ul.userList li:after {
 }
 .ant-table-wrapper .ant-table-thead>tr>th {
     padding: 8px;
+    font-size: 12px;
 }
 
 .filterTabs>.ant-tabs-nav::before {
