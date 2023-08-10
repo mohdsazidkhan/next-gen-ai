@@ -342,7 +342,6 @@ ul.userList li:after {
 
 .filterTabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
     color: #ffffff;
-    font-weight: 500;
 }
 .filterTabs .ant-tabs-tab-btn,
 .ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
