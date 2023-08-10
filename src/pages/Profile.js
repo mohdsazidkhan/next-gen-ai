@@ -1,11 +1,9 @@
 import React, { useState } from "react";
-import { Layout, Button, Form, Input, Upload, message, Tabs } from "antd";
-import TopHeader from "../components/TopHeader";
-import Sidebar from "../components/Sidebar";
+import { Button, Form, Input, Upload, message, Tabs } from "antd";
 import { LoadingOutlined, PlusOutlined } from "@ant-design/icons";
-const { Content } = Layout;
 
 const Profile = () => {
+
   const [loading] = useState(false);
   const [imageUrl, setImageUrl] = useState();
 
@@ -86,7 +84,7 @@ const Profile = () => {
             <Form.Item
               wrapperCol={{
                 ...layout.wrapperCol,
-                offset: 4,
+                offset: 6,
               }}
             >
               <Upload
@@ -223,11 +221,7 @@ const Profile = () => {
   ];
 
   return (
-    <Layout>
-      <Sidebar />
-      <Layout>
-        <TopHeader />
-        <Content className="bg-white m-6 p-6 mainContent">
+
           <Tabs
             className="profileTabs"
             defaultActiveKey="profile"
@@ -235,9 +229,6 @@ const Profile = () => {
             size={"medium"}
             items={tabItems}
           />
-        </Content>
-      </Layout>
-    </Layout>
   );
 };
 export default Profile;

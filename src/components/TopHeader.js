@@ -1,10 +1,34 @@
-import React from "react";
-import { Avatar, Dropdown, Layout, Space, Tooltip, theme } from "antd";
-import { SearchOutlined, BellOutlined, UploadOutlined } from "@ant-design/icons";
+import React, { useState } from "react";
+import {
+  Avatar,
+  Divider,
+  Dropdown,
+  Layout,
+  Modal,
+  Space,
+  Tooltip,
+  theme,
+} from "antd";
+import {
+  SearchOutlined,
+  BellOutlined,
+  UploadOutlined,
+  HomeOutlined,
+  LogoutOutlined,
+} from "@ant-design/icons";
 import { Link } from "react-router-dom";
+import Profile from "../pages/Profile";
 const { Header } = Layout;
 
 const TopHeader = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
 
   const {
     token: { colorBgContainer },
@@ -24,23 +48,6 @@ const TopHeader = () => {
       key: "3",
     },
   ];
-  const uitems = [
-    {
-      label: <div className="font-bold">Mohd Sazid Khan</div>,
-      key: "0",
-    },
-    {
-      type: 'divider',
-    },
-    {
-      label: <Link to="/profile">Profile</Link>,
-      key: "1",
-    },
-    {
-      label: <Link to="/">Logout</Link>,
-      key: "2",
-    },
-  ];
   return (
     <>
       <Header
@@ -51,22 +58,33 @@ const TopHeader = () => {
           width: "100%",
           background: colorBgContainer,
         }}
-        className="flex justify-end items-center ps-[50px] shadow"
+        className="flex justify-between items-center shadow"
       >
-        <div className="flex gap-4 items-center">
+        <div className="text-[#333] totalHeader font-semibold">
+          Total: 654,678,234
+        </div>
+        <div className="userName font-semibold uppercase">Jiyahul Haq</div>
+        <div className="flex gap-3 lg:gap-4 items-center rightHeader">
           <div>
-          <Tooltip title="Export Lists">
-            <Link to="/export-lists" className="cursor-pointer">
-              <UploadOutlined />
-            </Link>
-          </Tooltip>
+            <Tooltip title="Dashboard">
+              <Link to="/dashboard" className="cursor-pointer">
+                <HomeOutlined />
+              </Link>
+            </Tooltip>
+          </div>
+          <div>
+            <Tooltip title="Export Lists">
+              <Link to="/export-lists" className="cursor-pointer">
+                <UploadOutlined />
+              </Link>
+            </Tooltip>
           </div>
           <div className="mt-0 lg:mt-1">
-          <Tooltip title="Search">
-            <Link to="/search" className="cursor-pointer">
-              <SearchOutlined/>
-            </Link>
-          </Tooltip>
+            <Tooltip title="Search">
+              <Link to="/search" className="cursor-pointer">
+                <SearchOutlined />
+              </Link>
+            </Tooltip>
           </div>
           <div className="cursor-pointer">
             <Dropdown
@@ -82,23 +100,30 @@ const TopHeader = () => {
               </Space>
             </Dropdown>
           </div>
+          <div>
+            <Tooltip title="Logout">
+              <Link to="/" className="cursor-pointer">
+                <LogoutOutlined />
+              </Link>
+            </Tooltip>
+          </div>
           <div className="cursor-pointer">
-            <Dropdown
-              menu={{
-                items: uitems,
-              }}
-              trigger={["click"]}
-              placement="bottomRight"
-            >
-              <Space>
-                <Tooltip title="User">
-                  <Avatar size={32} />
-                </Tooltip>
-              </Space>
-            </Dropdown>
+            <Tooltip title="Profile">
+              <Avatar size={32} src="/profile.png" onClick={showModal} />
+            </Tooltip>
           </div>
         </div>
       </Header>
+      <Modal
+        title={<div className="text-md font-semibold">Profile</div>}
+        open={isModalOpen}
+        onCancel={handleCancel}
+        footer={null}
+        className="profileModal"
+      >
+        <Divider />
+        <Profile />
+      </Modal>
     </>
   );
 };

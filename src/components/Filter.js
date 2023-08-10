@@ -1,4 +1,4 @@
-import { FilterOutlined, ClearOutlined, RollbackOutlined  } from "@ant-design/icons";
+import { ClearOutlined, RollbackOutlined  } from "@ant-design/icons";
 import { AutoComplete, Button, Input, Switch, TreeSelect } from "antd";
 import { useState } from "react";
 import MultiRangeSlider from "multi-range-slider-react";
@@ -200,14 +200,6 @@ function Filter(props) {
   ];
   return (
     <div className="h-screen top-[4.1rem] z-10 w-[300px">
-      <div className="flex items-center relative ml-3">
-        <div className="me-2">
-          <FilterOutlined className="text-lg leading-none text-white" />
-        </div>
-        <div className="font-bold text-white text-md mt-1">
-          {props.title} Filters
-        </div>
-      </div>
       <div className="filterScroll mt-1">
         <div className="text-white ml-3">Choose Source</div>
         <div className="w-full mt-1 mb-3 flex justify-center">
@@ -418,24 +410,25 @@ function Filter(props) {
         </div>
       </div>
       <div className="flex justify-between items-center gap-3 pt-4 filterBtns">
-        <div>
-          <Button
-            className="bg-[--primary-color]"
-            type="primary"
-            icon={<RollbackOutlined className="text-white" />}
-            size={"medium"}
-          >
-            APPLY
-          </Button>
-        </div>
+        
         <div>
           <Button
             className="bg-[--primary-color] text-white"
             type="danger"
-            icon={<ClearOutlined className="text-white" />}
+            icon={<ClearOutlined className="text-white cursor-pointer" />}
             size={"medium"}
           >
             CLEAR
+          </Button>
+        </div>
+        <div>
+          <Button
+            className="bg-[--primary-color]"
+            type="primary"
+            icon={<RollbackOutlined className="text-white cursor-pointer" />}
+            size={"medium"}
+          >
+            APPLY
           </Button>
         </div>
       </div>
