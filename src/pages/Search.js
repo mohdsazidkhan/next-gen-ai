@@ -170,7 +170,7 @@ const Search = () => {
       render: () => {
         return (
           <Tooltip title="Verified">
-            <CheckCircleOutlined className="text-[#333] text-lg" />
+            <CheckCircleOutlined className="text-[#333] text-md" />
           </Tooltip>
         );
       },
@@ -182,7 +182,7 @@ const Search = () => {
         return (
           <Link target="_blank" to="/user-detail">
             <Tooltip title="View Detail">
-              <EyeOutlined className="text-[#333] cursor-pointer text-xl" />
+              <EyeOutlined className="text-[#333] cursor-pointer" />
             </Tooltip>
           </Link>
         );
