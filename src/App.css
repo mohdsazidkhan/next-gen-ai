@@ -350,6 +350,7 @@ ul.userList li:after {
 .profileTabs .ant-tabs-tab-btn {
     color: #212733;
 }
+.ant-tree-select-dropdown
 
 .filterTabs .ant-tabs-nav .ant-tabs-nav-wrap {
     justify-content: center;
@@ -363,12 +364,17 @@ ul.userList li:after {
 .ant-card,
 .ant-dropdown .ant-dropdown-menu,
 .ant-modal .ant-modal-content,
-.ant-tabs-card.ant-tabs-top>.ant-tabs-nav .ant-tabs-tab {
+.ant-tabs-card.ant-tabs-top>.ant-tabs-nav .ant-tabs-tab,
+.ant-select-dropdown{
     border-radius: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     -ms-border-radius: 0;
     -o-border-radius: 0;
+}
+.ant-select-dropdown{
+    width: 218px !important;
+    min-width: 218px !important;
 }
 .ant-switch.ant-switch-checked,.ant-switch.ant-switch-checked:hover:not(.ant-switch-disabled) {
     background: #35c1bd;
