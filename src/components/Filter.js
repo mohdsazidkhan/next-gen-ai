@@ -1,5 +1,5 @@
-import { FilterOutlined, DownloadOutlined } from "@ant-design/icons";
-import { AutoComplete, Button, Input, Slider, Switch, TreeSelect } from "antd";
+import { FilterOutlined, ClearOutlined, RollbackOutlined  } from "@ant-design/icons";
+import { AutoComplete, Button, Input, Switch, TreeSelect } from "antd";
 import { useState } from "react";
 import MultiRangeSlider from "multi-range-slider-react";
 function Filter(props) {
@@ -417,25 +417,25 @@ function Filter(props) {
           Experience Between {minVal + " to " + maxVal}
         </div>
       </div>
-      <div className="flex justify-evenly items-center gap-3 pt-4 filterBtns">
+      <div className="flex justify-between items-center gap-3 pt-4 filterBtns">
         <div>
           <Button
             className="bg-[--primary-color]"
             type="primary"
-            //icon={<DownloadOutlined />}
+            icon={<RollbackOutlined className="text-white" />}
             size={"medium"}
           >
-            APPLY FILTER
+            APPLY
           </Button>
         </div>
         <div>
           <Button
             className="bg-[--primary-color] text-white"
             type="danger"
-            //icon={<DownloadOutlined className="text-white" />}
+            icon={<ClearOutlined className="text-white" />}
             size={"medium"}
           >
-            CLEAR SEARCH
+            CLEAR
           </Button>
         </div>
       </div>

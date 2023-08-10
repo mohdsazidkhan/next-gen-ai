@@ -81,9 +81,12 @@ body {
 .filterBtns .ant-btn {
     font-size: 13px;
     height: 30px;
-    padding: 4px 9px;
+    padding: 4px 21px;
     background-color: #49cdb4;
     font-weight: 600;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 .filterMulti .ant-select-multiple .ant-select-selection-item {
     height: 20px;
@@ -339,7 +342,13 @@ ul.userList li:after {
     padding-bottom: 0px;
     overflow-y: auto;
 }
-
+.filterMulti .ant-select-multiple .ant-select-selection-item{
+    background-color: rgb(73 205 180);
+}
+.filterMulti .ant-select-multiple .ant-select-selection-item-content,
+.filterMulti .ant-select-multiple .ant-select-selection-item-remove{
+    color: #fff;
+}
 .filterTabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
     color: #ffffff;
 }
