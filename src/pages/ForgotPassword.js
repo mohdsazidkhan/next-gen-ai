@@ -1,6 +1,6 @@
 import {
   FacebookOutlined,
-  LinkOutlined,
+  LinkedinOutlined,
   InstagramOutlined,
   MailOutlined
 } from "@ant-design/icons";
@@ -13,7 +13,7 @@ function ForgotPassword() {
       <div className="grid grid-col-2 lg:grid-cols-2 gap-8 lg:gap-28">
         <div className="text-center">
           <img src="/logo-m.png" alt="Logo" className="w-20 h-20 mx-auto" />
-          <div className="text-white text-lg mb-4">
+          <div className="text-white text-lg mb-4 mt-3">
             NextGen AI <br /> Solutions Group
           </div>
           <div className="text-white text-2xl mb-2 font-bold">
@@ -25,7 +25,7 @@ function ForgotPassword() {
           </div>
           <div className="flex gap-3 justify-center mt-4">
             <FacebookOutlined className="text-white" />
-            <LinkOutlined className="text-white" />
+            <LinkedinOutlined className="text-white" />
             <InstagramOutlined className="text-white" />
           </div>
         </div>
