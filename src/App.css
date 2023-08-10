@@ -412,7 +412,6 @@ header{
 .filterTabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
     color: #ffffff;
 }
-
 .filterTabs .ant-tabs-tab-btn,
 .ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
     color: #ffffff;
@@ -420,7 +419,6 @@ header{
     justify-content: center;
     align-items: center;
 }
-
 .ant-tabs .ant-tabs-tab .anticon {
     margin-right: 5px;
     font-size: 17px;
