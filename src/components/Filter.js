@@ -208,7 +208,7 @@ function Filter(props) {
           {props.title} Filters
         </div>
       </div>
-      <div className="filterScroll mt-2">
+      <div className="filterScroll mt-1">
         <div className="text-white ml-3">Choose Source</div>
         <div className="w-full mt-1 mb-3 flex justify-center">
           <AutoComplete
