@@ -83,7 +83,7 @@ function UserDetail() {
               className="bg-[--primary-color]"
             />
           </div>
-          <div className="ms-0 lg:ms-8 flex flex-col items-center lg:items-start">
+          <div className="ms-0 lg:ms-8 flex flex-col items-center lg:items-start text-center lg:text-left">
             <div className="uppercase font-semibold text-3xl text-[--secondary-color]">
               Margaret Williams
             </div>
