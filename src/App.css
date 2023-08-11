@@ -579,7 +579,29 @@ header,.footer{
 .totalHeader {
     padding-left: 20px;
 }
-
+.redScore, .greenScore, .yellowScore{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin: auto
+}
+.redScore{
+    background-color: crimson;
+}
+.greenScore{
+    background-color: forestgreen;
+}
+.yellowScore{
+    background-color: #c5c504;
+}
 .rightHeader {
     padding-right: 20px;
 }

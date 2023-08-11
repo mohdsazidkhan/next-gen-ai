@@ -56,6 +56,7 @@ const Search = () => {
       email: "onedoe@gmail.com",
       jobtitle: "Dotnet Developer",
       lastverified: "15 Jan 2022",
+      cScore: 14,
     },
     {
       key: "2",
@@ -65,6 +66,7 @@ const Search = () => {
       email: "bhonedoe@gmail.com",
       jobtitle: "Front End Developer",
       lastverified: "15 Jan 2022",
+      cScore: 25,
     },
     {
       key: "3",
@@ -74,6 +76,7 @@ const Search = () => {
       email: "chonedoe@gmail.com",
       jobtitle: "HR Manager",
       lastverified: "15 Jan 2022",
+      cScore: 56,
     },
     {
       key: "4",
@@ -83,6 +86,7 @@ const Search = () => {
       email: "dhonedoe@gmail.com",
       jobtitle: "Node JS Developer",
       lastverified: "15 Jan 2022",
+      cScore: 67,
     },
     {
       key: "5",
@@ -92,6 +96,7 @@ const Search = () => {
       email: "ehonedoe@gmail.com",
       jobtitle: "React JS Developer",
       lastverified: "15 Jan 2022",
+      cScore: 74,
     },
     {
       key: "6",
@@ -101,6 +106,7 @@ const Search = () => {
       email: "fhonedoe@gmail.com",
       jobtitle: "Dot Net Developer",
       lastverified: "15 Jan 2022",
+      cScore: 87,
     },
     {
       key: "7",
@@ -110,6 +116,7 @@ const Search = () => {
       email: "ghonedoe@gmail.com",
       jobtitle: "Java Developer",
       lastverified: "15 Jan 2022",
+      cScore: 64,
     },
     {
       key: "8",
@@ -119,6 +126,7 @@ const Search = () => {
       email: "hhonedoe@gmail.com",
       jobtitle: "PHP Developer",
       lastverified: "15 Jan 2022",
+      cScore: 45,
     },
     {
       key: "9",
@@ -128,6 +136,7 @@ const Search = () => {
       email: "ihonedoe@gmail.com",
       jobtitle: "Software Developer",
       lastverified: "15 Jan 2022",
+      cScore: 78,
     },
     {
       key: "10",
@@ -137,6 +146,7 @@ const Search = () => {
       email: "jhonedoe@gmail.com",
       jobtitle: "Back End Developer",
       lastverified: "15 Jan 2022",
+      cScore: 14,
     },
   ];
 
@@ -149,6 +159,7 @@ const Search = () => {
       email: "ahonedoe@gmail.com",
       jobtitle: "Python Developer",
       lastverified: "15 Jan 2022",
+      cScore: 47,
     },
     {
       key: "2",
@@ -158,6 +169,7 @@ const Search = () => {
       email: "bhonedoe@gmail.com",
       jobtitle: "Front End Developer",
       lastverified: "15 Jan 2022",
+      cScore: 48,
     },
     {
       key: "3",
@@ -167,6 +179,7 @@ const Search = () => {
       email: "chonedoe@gmail.com",
       jobtitle: "HR Manager",
       lastverified: "15 Jan 2022",
+      cScore: 35,
     },
     {
       key: "4",
@@ -176,6 +189,7 @@ const Search = () => {
       email: "dhonedoe@gmail.com",
       jobtitle: "Node JS Developer",
       lastverified: "15 Jan 2022",
+      cScore: 95,
     },
     {
       key: "5",
@@ -185,6 +199,7 @@ const Search = () => {
       email: "ehonedoe@gmail.com",
       jobtitle: "React JS Developer",
       lastverified: "15 Jan 2022",
+      cScore: 45,
     },
     {
       key: "6",
@@ -194,6 +209,7 @@ const Search = () => {
       email: "fhonedoe@gmail.com",
       jobtitle: "Dot Net Developer",
       lastverified: "15 Jan 2022",
+      cScore: 66,
     },
     {
       key: "7",
@@ -203,6 +219,7 @@ const Search = () => {
       email: "ghonedoe@gmail.com",
       jobtitle: "Java Developer",
       lastverified: "15 Jan 2022",
+      cScore: 56,
     },
     {
       key: "8",
@@ -212,6 +229,7 @@ const Search = () => {
       email: "hhonedoe@gmail.com",
       jobtitle: "PHP Developer",
       lastverified: "15 Jan 2022",
+      cScore: 85,
     },
     {
       key: "9",
@@ -221,6 +239,7 @@ const Search = () => {
       email: "ihonedoe@gmail.com",
       jobtitle: "Software Developer",
       lastverified: "15 Jan 2022",
+      cScore: 25,
     },
     {
       key: "10",
@@ -230,6 +249,7 @@ const Search = () => {
       email: "jhonedoe@gmail.com",
       jobtitle: "Back End Developer",
       lastverified: "15 Jan 2022",
+      cScore: 55,
     },
   ];
 
@@ -243,31 +263,31 @@ const Search = () => {
       title: "Name",
       dataIndex: "name",
       key: "name",
-      sorter: (a, b) => a.name.localeCompare(b.name)
+      sorter: (a, b) => a.name.localeCompare(b.name),
     },
     {
       title: "Area",
       dataIndex: "area",
       key: "area",
-      sorter: (a, b) => a.area.localeCompare(b.area)
+      sorter: (a, b) => a.area.localeCompare(b.area),
     },
     {
       title: "Phone",
       dataIndex: "phone",
       key: "phone",
-      sorter: (a, b) => a.phone - b.phone
+      sorter: (a, b) => a.phone - b.phone,
     },
     {
       title: "Email",
       dataIndex: "email",
       key: "email",
-      sorter: (a, b) => a.email.localeCompare(b.email)
+      sorter: (a, b) => a.email.localeCompare(b.email),
     },
     {
       title: "Job Title",
       dataIndex: "jobtitle",
       key: "jobtitle",
-      sorter: (a, b) => a.jobtitle.localeCompare(b.jobtitle)
+      sorter: (a, b) => a.jobtitle.localeCompare(b.jobtitle),
     },
     {
       title: "Last Verified",
@@ -286,13 +306,37 @@ const Search = () => {
       },
     },
     {
+      title: "Confidence Score",
+      align: "center",
+      key: 'cScore',
+      render: (record) => {
+        if(record.cScore < 50){
+        return (
+          <div className='redScore'>{record.cScore}</div>
+        );
+        }else if(record.cScore >= 50 && record.cScore <= 75){
+          return (
+            <div className='yellowScore'>{record.cScore}</div>
+          );
+          }
+          else if(record.cScore >= 75 && record.cScore <= 100){
+            return (
+              <div className='greenScore'>{record.cScore}</div>
+            );
+            }
+      },
+    },
+    {
       title: "Action",
       align: "center",
       render: () => {
         return (
-            <Tooltip title="View Detail">
-              <EyeOutlined className="text-[#333] cursor-pointer" onClick={showDModal}/>
-            </Tooltip>
+          <Tooltip title="View Detail">
+            <EyeOutlined
+              className="text-[#333] cursor-pointer"
+              onClick={showDModal}
+            />
+          </Tooltip>
         );
       },
     },
@@ -308,31 +352,31 @@ const Search = () => {
       title: "Name",
       dataIndex: "name",
       key: "name",
-      sorter: (a, b) => a.name.localeCompare(b.name)
+      sorter: (a, b) => a.name.localeCompare(b.name),
     },
     {
       title: "Area",
       dataIndex: "area",
       key: "area",
-      sorter: (a, b) => a.area.localeCompare(b.area)
+      sorter: (a, b) => a.area.localeCompare(b.area),
     },
     {
       title: "Phone",
       dataIndex: "phone",
       key: "phone",
-      sorter: (a, b) => a.phone - b.phone
+      sorter: (a, b) => a.phone - b.phone,
     },
     {
       title: "Email",
       dataIndex: "email",
       key: "email",
-      sorter: (a, b) => a.email.localeCompare(b.email)
+      sorter: (a, b) => a.email.localeCompare(b.email),
     },
     {
       title: "Job Title",
       dataIndex: "jobtitle",
       key: "jobtitle",
-      sorter: (a, b) => a.jobtitle.localeCompare(b.jobtitle)
+      sorter: (a, b) => a.jobtitle.localeCompare(b.jobtitle),
     },
     {
       title: "Last Verified",
@@ -351,13 +395,38 @@ const Search = () => {
       },
     },
     {
+      title: "Confidence Score",
+      align: "center",
+      key: 'cScore',
+      align: 'center',
+      render: (record) => {
+        if(record.cScore < 50){
+        return (
+          <div className='redScore'>{record.cScore}</div>
+        );
+        }else if(record.cScore >= 50 && record.cScore <= 75){
+          return (
+            <div className='yellowScore'>{record.cScore}</div>
+          );
+          }
+          else if(record.cScore >= 75 && record.cScore <= 100){
+            return (
+              <div className='greenScore'>{record.cScore}</div>
+            );
+            }
+      },
+    },
+    {
       title: "Action",
       align: "center",
       render: () => {
         return (
-            <Tooltip title="View Detail">
-              <EyeOutlined className="text-[#333] cursor-pointer" onClick={showDModal}/>
-            </Tooltip>
+          <Tooltip title="View Detail">
+            <EyeOutlined
+              className="text-[#333] cursor-pointer"
+              onClick={showDModal}
+            />
+          </Tooltip>
         );
       },
     },
@@ -396,11 +465,11 @@ const Search = () => {
       key: "total",
       children: (
         <Table
-            dataSource={totalData}
-            columns={totalcolumns}
-            className="exportTable"
-            sortDirections={["ascend", "descend"]}
-          />
+          dataSource={totalData}
+          columns={totalcolumns}
+          className="exportTable"
+          sortDirections={["ascend", "descend"]}
+        />
       ),
     },
     {
@@ -408,11 +477,11 @@ const Search = () => {
       key: "saved",
       children: (
         <Table
-            dataSource={dataSource}
-            columns={columns}
-            className="exportTable"
-            sortDirections={["ascend", "descend"]}
-          />
+          dataSource={dataSource}
+          columns={columns}
+          className="exportTable"
+          sortDirections={["ascend", "descend"]}
+        />
       ),
     },
   ];
@@ -499,17 +568,31 @@ const Search = () => {
             </Form>
           </Modal>
           <Modal
-        title={<div className="text-md font-semibold ms-2 lg:ms-4">User Detail</div>}
-        open={isDModalOpen}
-        onCancel={handleDCancel}
-        footer={null}
-        className="userDetailModal"
-      >
-        <Divider />
-        <UserDetail />
-      </Modal>
-      </Content>
-      <Footer className="footer bg-[--secondary-color] text-white text-center">© Copyright 2023 <a target="_blank" className="text-[--primary-color]" href="https://nexgenai.io/">NexGenAI.io</a> – A NexGenAI Holding Group. All Rights Reserved.</Footer>
+            title={
+              <div className="text-md font-semibold ms-2 lg:ms-4">
+                User Detail
+              </div>
+            }
+            open={isDModalOpen}
+            onCancel={handleDCancel}
+            footer={null}
+            className="userDetailModal"
+          >
+            <Divider />
+            <UserDetail />
+          </Modal>
+        </Content>
+        <Footer className="footer bg-[--secondary-color] text-white text-center">
+          © Copyright 2023{" "}
+          <a
+            target="_blank"
+            className="text-[--primary-color]"
+            href="https://nexgenai.io/"
+          >
+            NexGenAI.io
+          </a>{" "}
+          – A NexGenAI Holding Group. All Rights Reserved.
+        </Footer>
       </Layout>
     </Layout>
   );
