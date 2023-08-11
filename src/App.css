@@ -7,11 +7,12 @@ body {
     background-color: #f2f2f2;
     font-size: 12px;
 }
-.ant-input{
-    font-size: 12px;
+.ant-input,.ant-select-selector .ant-select-selection-search-input::placeholder{
+    font-size: 12px !important;
 }
 input::placeholder,.ant-select-selection-placeholder{
     color: #999 !important;
+    font-size: 12px !important;
 }
 .ant-form-item .ant-form-item-label >label {
     font-size: 12px;
@@ -407,7 +408,7 @@ header{
 .ant-form-item-control-input-content span,
 .ant-input-affix-wrapper >input.ant-input,
 .ant-input-affix-wrapper >input.ant-input::placeholder{
-    font-size: 12px;
+    font-size: 12px !important;
 }
 .filterTabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
     color: #ffffff;
@@ -473,9 +474,10 @@ header{
 }
 .ant-select-single .ant-select-selector .ant-select-selection-placeholder {
     line-height: 25px !important;
+    font-size: 12px !important;
 }
 .ant-table-wrapper .ant-table{
-    font-size: 10px;
+    font-size: 12px;
     line-height: 12px;
 }
 .ant-select-single {

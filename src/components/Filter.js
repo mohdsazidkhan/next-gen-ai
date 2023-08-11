@@ -325,7 +325,7 @@ function Filter(props) {
         </div>
         {validEmail && (
           <>
-            <div className="text-white ml-3 text-sm">Last Validate Email</div>
+            <div className="text-white ml-3">Last Validate Email</div>
             <div className="w-full mt-1 mb-3 flex justify-center">
               <AutoComplete
                 style={{ width: "250px" }}
