@@ -498,7 +498,7 @@ const Search = () => {
             </Form>
           </Modal>
           <Modal
-        title={<div className="text-md font-semibold">User Detail</div>}
+        title={<div className="text-md font-semibold ms-2 lg:ms-4">User Detail</div>}
         open={isDModalOpen}
         onCancel={handleDCancel}
         footer={null}
