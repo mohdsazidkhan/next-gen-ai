@@ -54,7 +54,7 @@ function ForgotPassword() {
         </div>
       </div>
     </div>
-    <Footer className="bg-[--secondary-color] text-white text-center">© Copyright 2023 <a target="_blank" className="text-[--primary-color]" href="https://nexgenai.io/">NexGenAI.io</a> – A NexGenAI Holding Group. All Rights Reserved.</Footer>
+    <Footer className="loginFooter bg-transparent text-white text-center">© Copyright 2023 <a target="_blank" className="text-[--primary-color]" href="https://nexgenai.io/">NexGenAI.io</a> – A NexGenAI Holding Group. All Rights Reserved.</Footer>
     </>
   );
 }

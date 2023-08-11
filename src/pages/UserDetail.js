@@ -103,7 +103,7 @@ function UserDetail() {
       </Row>
       <Row className="m-4">
         <Col xs={24} sm={24} md={24} lg={12} xl={12}>
-          <p className="pe-0 lg:pe-8 pb-4 lg:pb-0 text-base text-[--secondary-color]">
+          <p className="pe-0 lg:pe-8 pb-4 lg:pb-0 text-[--secondary-color]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -125,21 +125,21 @@ function UserDetail() {
         >
           <div className="ms-0 lg:ms-8 p-4 lg:p-0">
             <ul className="userList">
-              <li className="text-white text-base mb-4 flex">
+              <li className="text-white mb-4 flex">
                 <div className="w-auto lg:w-32">Organization</div> :{" "}
                 <div className="ms-2 lg:ms-6">
                   Post Consumer Board (Formaly MOM Board)
                 </div>
               </li>
-              <li className="text-white text-base mb-4 flex">
+              <li className="text-white mb-4 flex">
                 <div className="w-auto lg:w-32">Email</div> :{" "}
                 <div className="ms-2 lg:ms-6">margratwilliams@gmail.com</div>
               </li>
-              <li className="text-white text-base mb-4 flex">
+              <li className="text-white mb-4 flex">
                 <div className="w-auto lg:w-32">Language</div> :{" "}
                 <div className="ms-2 lg:ms-6">English</div>
               </li>
-              <li className="text-white text-base flex">
+              <li className="text-white flex">
                 <div className="w-auto lg:w-32">Location</div> :{" "}
                 <div className="ms-2 lg:ms-6">Newyork, United States</div>
               </li>
@@ -148,228 +148,228 @@ function UserDetail() {
         </Col>
       </Row>
       <div className="bg-[--secondary-color] m-4 p-4 lg:p-10">
-        <div className="text-3xl font-bold text-[--primary-color] jobHead relative">
+        <div className="text-xl font-bold text-[--primary-color] jobHead relative">
           Job Functions & Efficiency
         </div>
         <div className="grid gird-col-1 lg:grid-cols-3 gap-y-4 gap-x-16 mt-10">
           <div className="flex justify-between">
-            <div className="text-xl font-semibold text-white">
+            <div className="font-semibold text-white">
               Art and Design
             </div>
-            <div className="text-xl font-semibold gradientColor">3%</div>
+            <div className="font-semibold gradientColor">3%</div>
           </div>
           <div className="flex justify-between">
-            <div className="text-xl font-semibold text-white">Engineering</div>
-            <div className="text-xl font-semibold gradientColor">22%</div>
+            <div className="font-semibold text-white">Engineering</div>
+            <div className="font-semibold gradientColor">22%</div>
           </div>
           <div className="flex justify-between">
-            <div className="text-xl font-semibold text-white">Consulting</div>
-            <div className="text-xl font-semibold gradientColor">7%</div>
+            <div className="font-semibold text-white">Consulting</div>
+            <div className="font-semibold gradientColor">7%</div>
           </div>
           <div className="flex justify-between">
-            <div className="text-xl font-semibold text-white">
+            <div className="font-semibold text-white">
               Art and Design
             </div>
-            <div className="text-xl font-semibold gradientColor">3%</div>
+            <div className="font-semibold gradientColor">3%</div>
           </div>
           <div className="flex justify-between">
-            <div className="text-xl font-semibold text-white">Engineering</div>
-            <div className="text-xl font-semibold gradientColor">22%</div>
+            <div className="font-semibold text-white">Engineering</div>
+            <div className="font-semibold gradientColor">22%</div>
           </div>
           <div className="flex justify-between">
-            <div className="text-xl font-semibold text-white">Consulting</div>
-            <div className="text-xl font-semibold gradientColor">7%</div>
+            <div className="font-semibold text-white">Consulting</div>
+            <div className="font-semibold gradientColor">7%</div>
           </div>
           <div className="flex justify-between">
-            <div className="text-xl font-semibold text-white">
+            <div className="font-semibold text-white">
               Art and Design
             </div>
-            <div className="text-xl font-semibold gradientColor">3%</div>
+            <div className="font-semibold gradientColor">3%</div>
           </div>
           <div className="flex justify-between">
-            <div className="text-xl font-semibold text-white">Engineering</div>
-            <div className="text-xl font-semibold gradientColor">22%</div>
+            <div className="font-semibold text-white">Engineering</div>
+            <div className="font-semibold gradientColor">22%</div>
           </div>
           <div className="flex justify-between">
-            <div className="text-xl font-semibold text-white">Consulting</div>
-            <div className="text-xl font-semibold gradientColor">7%</div>
+            <div className="font-semibold text-white">Consulting</div>
+            <div className="font-semibold gradientColor">7%</div>
           </div>
           <div className="flex justify-between">
-            <div className="text-xl font-semibold text-white">
+            <div className="font-semibold text-white">
               Art and Design
             </div>
-            <div className="text-xl font-semibold gradientColor">3%</div>
+            <div className="font-semibold gradientColor">3%</div>
           </div>
           <div className="flex justify-between">
-            <div className="text-xl font-semibold text-white">Engineering</div>
-            <div className="text-xl font-semibold gradientColor">22%</div>
+            <div className="font-semibold text-white">Engineering</div>
+            <div className="font-semibold gradientColor">22%</div>
           </div>
           <div className="flex justify-between">
-            <div className="text-xl font-semibold text-white">Consulting</div>
-            <div className="text-xl font-semibold gradientColor">7%</div>
+            <div className="font-semibold text-white">Consulting</div>
+            <div className="font-semibold gradientColor">7%</div>
           </div>
           <div className="flex justify-between">
-            <div className="text-xl font-semibold text-white">
+            <div className="font-semibold text-white">
               Art and Design
             </div>
-            <div className="text-xl font-semibold gradientColor">3%</div>
+            <div className="font-semibold gradientColor">3%</div>
           </div>
           <div className="flex justify-between">
-            <div className="text-xl font-semibold text-white">Engineering</div>
-            <div className="text-xl font-semibold gradientColor">22%</div>
+            <div className="font-semibold text-white">Engineering</div>
+            <div className="font-semibold gradientColor">22%</div>
           </div>
           <div className="flex justify-between">
-            <div className="text-xl font-semibold text-white">Consulting</div>
-            <div className="text-xl font-semibold gradientColor">7%</div>
+            <div className="font-semibold text-white">Consulting</div>
+            <div className="font-semibold gradientColor">7%</div>
           </div>
           <div className="flex justify-between">
-            <div className="text-xl font-semibold text-white">
+            <div className="font-semibold text-white">
               Art and Design
             </div>
-            <div className="text-xl font-semibold gradientColor">3%</div>
+            <div className="font-semibold gradientColor">3%</div>
           </div>
           <div className="flex justify-between">
-            <div className="text-xl font-semibold text-white">Engineering</div>
-            <div className="text-xl font-semibold gradientColor">22%</div>
+            <div className="font-semibold text-white">Engineering</div>
+            <div className="font-semibold gradientColor">22%</div>
           </div>
           <div className="flex justify-between">
-            <div className="text-xl font-semibold text-white">Consulting</div>
-            <div className="text-xl font-semibold gradientColor">7%</div>
+            <div className="font-semibold text-white">Consulting</div>
+            <div className="font-semibold gradientColor">7%</div>
           </div>
         </div>
       </div>
       <div className="personalDetail m-4">
       <Row>
           <Col sm={24} md={24} lg={24} xl={10} xxl={10}>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Organization Hq Location State :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Contact Email Num Clicks :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Job Start Date :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Organization Retail Location Count :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Personal Seniority :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Email Validation Date Time :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Organization Hq Location City with State Or Country:
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Contact Email Replied :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Person Location Country :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Person Extrapolated Email Confidence :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Person Email Status Cd :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Contact Phone Numbers :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Sanitized Organization Name Unanalyzed :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Email Validated :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Organization Current Technologies:
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Email Validation History :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Organization Revenue in Thousands in Int :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Organization Num Current Employees :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Organization Num Languages :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Organization Domain :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Contacy Email Open :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Organization Founded Year :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Contacy Email Clicked :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Email Validated Status :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Organization Relevant Keywords :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Organization Num Linkedin Followers :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Contacy Email Spam Blocked :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Email Validation All :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Organization Location Hq Postl Code :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Contact Email Auto Responder :
           </div>
         
           </Col>
           <Col sm={24} md={24} lg={24} xl={14} xxl={14}>
-          <div className="text-base my-2 ms-2 lg:ms-0">Minnesota</div>
-          <div className="text-base my-2 ms-2 lg:ms-0">0</div>
-          <div className="text-base my-2 ms-2 lg:ms-0">Nov, 1 2017</div>
-          <div className="text-base my-2 ms-2 lg:ms-0">0</div>
-          <div className="text-base my-2 ms-2 lg:ms-0">Manager</div>
-          <div className="text-base my-2 ms-2 lg:ms-0">
+          <div className="my-2 ms-2 lg:ms-0">Minnesota</div>
+          <div className="my-2 ms-2 lg:ms-0">0</div>
+          <div className="my-2 ms-2 lg:ms-0">Nov, 1 2017</div>
+          <div className="my-2 ms-2 lg:ms-0">0</div>
+          <div className="my-2 ms-2 lg:ms-0">Manager</div>
+          <div className="my-2 ms-2 lg:ms-0">
             2023-02-20T07:12:08.185896
           </div>
-          <div className="text-base my-2 ms-2 lg:ms-0">
+          <div className="my-2 ms-2 lg:ms-0">
             Lakeville, Minnesota
           </div>
-          <div className="text-base my-2 ms-2 lg:ms-0">false</div>
-          <div className="text-base my-2 ms-2 lg:ms-0">United States</div>
-          <div className="text-base my-2 ms-2 lg:ms-0">0</div>
-          <div className="text-base my-2 ms-2 lg:ms-0">Verified</div>
-          <div className="text-base my-2 ms-2 lg:ms-0">1) Sanitized Number: +91234234234234, Status : No Status, Type : other</div>
-          <div className="text-base my-2 ms-2 lg:ms-0">post consumer brands formely mom brands</div>
+          <div className="my-2 ms-2 lg:ms-0">false</div>
+          <div className="my-2 ms-2 lg:ms-0">United States</div>
+          <div className="my-2 ms-2 lg:ms-0">0</div>
+          <div className="my-2 ms-2 lg:ms-0">Verified</div>
+          <div className="my-2 ms-2 lg:ms-0">1) Sanitized Number: +91234234234234, Status : No Status, Type : other</div>
+          <div className="my-2 ms-2 lg:ms-0">post consumer brands formely mom brands</div>
 
 
-          <div className="text-base my-2 ms-2 lg:ms-0">true</div>
-          <div className="text-base my-2 ms-2 lg:ms-0">Corporate Domains, Office 365, Google Analytics</div>
-          <div className="text-base my-2 ms-2 lg:ms-0">Email Address: fasfsdfdsa@gmail.com, Email Validated: true, Reason: Safe to Send</div>
-          <div className="text-base my-2 ms-2 lg:ms-0">30000USD</div>
-          <div className="text-base my-2 ms-2 lg:ms-0">841</div>
-          <div className="text-base my-2 ms-2 lg:ms-0">1</div>
-          <div className="text-base my-2 ms-2 lg:ms-0">mombrands.com</div>
-          <div className="text-base my-2 ms-2 lg:ms-0">false</div>
-          <div className="text-base my-2 ms-2 lg:ms-0">2012</div>
-          <div className="text-base my-2 ms-2 lg:ms-0">false</div>
-          <div className="text-base my-2 ms-2 lg:ms-0">Verified</div>
-          <div className="text-base my-2 ms-2 lg:ms-0">1 - consumer goods, 2 - consumer</div>
-          <div className="text-base my-2 ms-2 lg:ms-0">7327</div>
-          <div className="text-base my-2 ms-2 lg:ms-0">false</div>
-          <div className="text-base my-2 ms-2 lg:ms-0">campaign reconciliation</div>
-          <div className="text-base my-2 ms-2 lg:ms-0">55044</div>
-          <div className="text-base my-2 ms-2 lg:ms-0">false</div>
+          <div className="my-2 ms-2 lg:ms-0">true</div>
+          <div className="my-2 ms-2 lg:ms-0">Corporate Domains, Office 365, Google Analytics</div>
+          <div className="my-2 ms-2 lg:ms-0">Email Address: fasfsdfdsa@gmail.com, Email Validated: true, Reason: Safe to Send</div>
+          <div className="my-2 ms-2 lg:ms-0">30000USD</div>
+          <div className="my-2 ms-2 lg:ms-0">841</div>
+          <div className="my-2 ms-2 lg:ms-0">1</div>
+          <div className="my-2 ms-2 lg:ms-0">mombrands.com</div>
+          <div className="my-2 ms-2 lg:ms-0">false</div>
+          <div className="my-2 ms-2 lg:ms-0">2012</div>
+          <div className="my-2 ms-2 lg:ms-0">false</div>
+          <div className="my-2 ms-2 lg:ms-0">Verified</div>
+          <div className="my-2 ms-2 lg:ms-0">1 - consumer goods, 2 - consumer</div>
+          <div className="my-2 ms-2 lg:ms-0">7327</div>
+          <div className="my-2 ms-2 lg:ms-0">false</div>
+          <div className="my-2 ms-2 lg:ms-0">campaign reconciliation</div>
+          <div className="my-2 ms-2 lg:ms-0">55044</div>
+          <div className="my-2 ms-2 lg:ms-0">false</div>
           </Col>
           </Row>
         </div>

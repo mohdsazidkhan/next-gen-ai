@@ -217,12 +217,6 @@ input::placeholder,
     background: #35c1bd;
 }
 
-.ant-table-wrapper .ant-table-pagination.ant-pagination {
-    position: fixed;
-    bottom: -5px;
-    right: 15px;
-}
-
 .profileModal {
     top: 15px !important;
 }
@@ -292,8 +286,8 @@ ul.userList li:after {
     width: 200px;
     height: 4px;
     background-color: #2fada9;
-    margin-top: -15px;
-    margin-left: 390px;
+    margin-top: -12px;
+    margin-left: 275px;
 }
 
 .mainContent {
@@ -536,8 +530,9 @@ header,.footer{
     line-height: 25px !important;
     font-size: 12px !important;
 }
-.ant-layout-footer{
+.loginFooter{
     padding: 10px 20px;
+    margin-top: -45px;
 }
 .ant-table-wrapper .ant-table {
     font-size: 12px;
@@ -588,7 +583,10 @@ header,.footer{
 .rightHeader {
     padding-right: 20px;
 }
-
+.footer{
+    margin-top: 15px;
+    padding: 10px 20px;
+}
 @media screen and (max-width:991px) {
     .exportTable .ant-table {
         overflow-x: scroll;
@@ -673,6 +671,16 @@ header,.footer{
 
     .logoText {
         display: none;
+    }
+    .loginBg {
+        height: auto;
+        padding-bottom: 100px;
+    }
+    .loginFooter{
+        margin-top: -70px;
+    }
+    .footer{
+        margin-top: 25px;
     }
 }
 
