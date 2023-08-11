@@ -1,62 +1,565 @@
-import { Avatar, Col, Row, Collapse } from "antd";
+import { Avatar, Col, Row, Tabs } from "antd";
 import {
   UserOutlined,
   FacebookOutlined,
   LinkedinOutlined,
   InstagramOutlined,
-  PlusOutlined,
-  MinusOutlined,
+  FileOutlined
 } from "@ant-design/icons";
+import { useState } from "react";
 
 function UserDetail() {
-  const text = `
-  A dog is a type of domesticated animal.
-  Known for its loyalty and faithfulness,
-  it can be found as a welcome guest in many households across the world.
-`;
+  const [activeTab, setActiveTab] = useState("b2c");
+  const tabItems = [
+    {
+      label: 
+      activeTab === "b2c" ? (
+          <>
+            <FileOutlined />
+            <span>B2C</span>
+          </>
+        ) : (
+          "B2C"
+        )
+        ,
+      key: "b2c",
+      children: <Row>
+      <Col sm={24} md={24} lg={24} xl={6} xxl={6}>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Hq Location State :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Contact Email Num Clicks :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Job Start Date :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Retail Location Count :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Personal Seniority :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Email Validation Date Time :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Hq Location City with State Or Country:
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Contact Email Replied :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Person Location Country :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Person Extrapolated Email Confidence :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Person Email Status Cd :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Contact Phone Numbers :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Sanitized Organization Name Unanalyzed :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Email Validated :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Current Technologies:
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Email Validation History :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Revenue in Thousands in Int :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Num Current Employees :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Num Languages :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Domain :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Contacy Email Open :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Founded Year :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Contacy Email Clicked :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Email Validated Status :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Relevant Keywords :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Num Linkedin Followers :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Contacy Email Spam Blocked :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Email Validation All :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Location Hq Postl Code :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Contact Email Auto Responder :
+      </div>
+    
+      </Col>
+      <Col sm={24} md={24} lg={24} xl={6} xxl={6}>
+      <div className="my-2 ms-2 lg:ms-0">Minnesota</div>
+      <div className="my-2 ms-2 lg:ms-0">0</div>
+      <div className="my-2 ms-2 lg:ms-0">Nov, 1 2017</div>
+      <div className="my-2 ms-2 lg:ms-0">0</div>
+      <div className="my-2 ms-2 lg:ms-0">Manager</div>
+      <div className="my-2 ms-2 lg:ms-0">
+        2023-02-20T07:12:08.185896
+      </div>
+      <div className="my-2 ms-2 lg:ms-0">
+        Lakeville, Minnesota
+      </div>
+      <div className="my-2 ms-2 lg:ms-0">false</div>
+      <div className="my-2 ms-2 lg:ms-0">United States</div>
+      <div className="my-2 ms-2 lg:ms-0">0</div>
+      <div className="my-2 ms-2 lg:ms-0">Verified</div>
+      <div className="my-2 ms-2 lg:ms-0">1) Sanitized Number: +91234234234234, Status : No Status, Type : other</div>
+      <div className="my-2 ms-2 lg:ms-0">post consumer brands formely mom brands</div>
 
-  const items = [
-    {
-      key: "1",
-      label: "This is panel header 1",
-      children: <p>{text}</p>,
+
+      <div className="my-2 ms-2 lg:ms-0">true</div>
+      <div className="my-2 ms-2 lg:ms-0">Corporate Domains, Office 365, Google Analytics</div>
+      <div className="my-2 ms-2 lg:ms-0">Email Address: fasfsdfdsa@gmail.com, Email Validated: true, Reason: Safe to Send</div>
+      <div className="my-2 ms-2 lg:ms-0">30000USD</div>
+      <div className="my-2 ms-2 lg:ms-0">841</div>
+      <div className="my-2 ms-2 lg:ms-0">1</div>
+      <div className="my-2 ms-2 lg:ms-0">mombrands.com</div>
+      <div className="my-2 ms-2 lg:ms-0">false</div>
+      <div className="my-2 ms-2 lg:ms-0">2012</div>
+      <div className="my-2 ms-2 lg:ms-0">false</div>
+      <div className="my-2 ms-2 lg:ms-0">Verified</div>
+      <div className="my-2 ms-2 lg:ms-0">1 - consumer goods, 2 - consumer</div>
+      <div className="my-2 ms-2 lg:ms-0">7327</div>
+      <div className="my-2 ms-2 lg:ms-0">false</div>
+      <div className="my-2 ms-2 lg:ms-0">campaign reconciliation</div>
+      <div className="my-2 ms-2 lg:ms-0">55044</div>
+      <div className="my-2 ms-2 lg:ms-0">false</div>
+      </Col>
+      <Col sm={24} md={24} lg={24} xl={6} xxl={6}>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Hq Location State :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Contact Email Num Clicks :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Job Start Date :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Retail Location Count :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Personal Seniority :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Email Validation Date Time :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Hq Location City with State Or Country:
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Contact Email Replied :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Person Location Country :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Person Extrapolated Email Confidence :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Person Email Status Cd :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Contact Phone Numbers :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Sanitized Organization Name Unanalyzed :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Email Validated :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Current Technologies:
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Email Validation History :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Revenue in Thousands in Int :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Num Current Employees :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Num Languages :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Domain :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Contacy Email Open :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Founded Year :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Contacy Email Clicked :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Email Validated Status :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Relevant Keywords :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Num Linkedin Followers :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Contacy Email Spam Blocked :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Email Validation All :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Location Hq Postl Code :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Contact Email Auto Responder :
+      </div>
+    
+      </Col>
+      <Col sm={24} md={24} lg={24} xl={6} xxl={6}>
+      <div className="my-2 ms-2 lg:ms-0">Minnesota</div>
+      <div className="my-2 ms-2 lg:ms-0">0</div>
+      <div className="my-2 ms-2 lg:ms-0">Nov, 1 2017</div>
+      <div className="my-2 ms-2 lg:ms-0">0</div>
+      <div className="my-2 ms-2 lg:ms-0">Manager</div>
+      <div className="my-2 ms-2 lg:ms-0">
+        2023-02-20T07:12:08.185896
+      </div>
+      <div className="my-2 ms-2 lg:ms-0">
+        Lakeville, Minnesota
+      </div>
+      <div className="my-2 ms-2 lg:ms-0">false</div>
+      <div className="my-2 ms-2 lg:ms-0">United States</div>
+      <div className="my-2 ms-2 lg:ms-0">0</div>
+      <div className="my-2 ms-2 lg:ms-0">Verified</div>
+      <div className="my-2 ms-2 lg:ms-0">1) Sanitized Number: +91234234234234, Status : No Status, Type : other</div>
+      <div className="my-2 ms-2 lg:ms-0">post consumer brands formely mom brands</div>
+
+
+      <div className="my-2 ms-2 lg:ms-0">true</div>
+      <div className="my-2 ms-2 lg:ms-0">Corporate Domains, Office 365, Google Analytics</div>
+      <div className="my-2 ms-2 lg:ms-0">Email Address: fasfsdfdsa@gmail.com, Email Validated: true, Reason: Safe to Send</div>
+      <div className="my-2 ms-2 lg:ms-0">30000USD</div>
+      <div className="my-2 ms-2 lg:ms-0">841</div>
+      <div className="my-2 ms-2 lg:ms-0">1</div>
+      <div className="my-2 ms-2 lg:ms-0">mombrands.com</div>
+      <div className="my-2 ms-2 lg:ms-0">false</div>
+      <div className="my-2 ms-2 lg:ms-0">2012</div>
+      <div className="my-2 ms-2 lg:ms-0">false</div>
+      <div className="my-2 ms-2 lg:ms-0">Verified</div>
+      <div className="my-2 ms-2 lg:ms-0">1 - consumer goods, 2 - consumer</div>
+      <div className="my-2 ms-2 lg:ms-0">7327</div>
+      <div className="my-2 ms-2 lg:ms-0">false</div>
+      <div className="my-2 ms-2 lg:ms-0">campaign reconciliation</div>
+      <div className="my-2 ms-2 lg:ms-0">55044</div>
+      <div className="my-2 ms-2 lg:ms-0">false</div>
+      </Col>
+      </Row>,
     },
     {
-      key: "2",
-      label: "This is panel header 2",
-      children: <p>{text}</p>,
-    },
-    {
-      key: "3",
-      label: "Job Start Date",
-      children: <p>1st November 2023</p>,
-    },
-    {
-      key: "4",
-      label: "This is panel header 4",
-      children: <p>{text}</p>,
-    },
-    {
-      key: "5",
-      label: "This is panel header 5",
-      children: <p>{text}</p>,
-    },
-    {
-      key: "6",
-      label: "This is panel header 6",
-      children: <p>{text}</p>,
-    },
-    {
-      key: "7",
-      label: "This is panel header 7",
-      children: <p>{text}</p>,
-    },
-    {
-      key: "8",
-      label: "This is panel header 8",
-      children: <p>{text}</p>,
+      label: 
+      activeTab === "b2b" ? (
+          <>
+            <FileOutlined />
+            <span>B2B</span>
+          </>
+        ) : (
+          "B2B"
+      ),
+      key: "b2b",
+      children: <Row>
+      <Col sm={24} md={24} lg={24} xl={6} xxl={6}>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Contact Email Num Clicks :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Job Start Date :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Retail Location Count :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Personal Seniority :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Email Validation Date Time :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Hq Location City with State Or Country:
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Contact Email Replied :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Person Location Country :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Person Extrapolated Email Confidence :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Person Email Status Cd :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Contact Phone Numbers :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Sanitized Organization Name Unanalyzed :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Email Validated :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Current Technologies:
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Email Validation History :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Revenue in Thousands in Int :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Num Current Employees :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Num Languages :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Domain :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Contacy Email Open :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Founded Year :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Contacy Email Clicked :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Email Validated Status :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Relevant Keywords :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Num Linkedin Followers :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Contacy Email Spam Blocked :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Email Validation All :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Location Hq Postl Code :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Contact Email Auto Responder :
+      </div>
+    
+      </Col>
+      <Col sm={24} md={24} lg={24} xl={6} xxl={6}>
+      <div className="my-2 ms-2 lg:ms-0">0</div>
+      <div className="my-2 ms-2 lg:ms-0">Nov, 1 2017</div>
+      <div className="my-2 ms-2 lg:ms-0">0</div>
+      <div className="my-2 ms-2 lg:ms-0">Manager</div>
+      <div className="my-2 ms-2 lg:ms-0">
+        2023-02-20T07:12:08.185896
+      </div>
+      <div className="my-2 ms-2 lg:ms-0">
+        Lakeville, Minnesota
+      </div>
+      <div className="my-2 ms-2 lg:ms-0">false</div>
+      <div className="my-2 ms-2 lg:ms-0">United States</div>
+      <div className="my-2 ms-2 lg:ms-0">0</div>
+      <div className="my-2 ms-2 lg:ms-0">Verified</div>
+      <div className="my-2 ms-2 lg:ms-0">1) Sanitized Number: +91234234234234, Status : No Status, Type : other</div>
+      <div className="my-2 ms-2 lg:ms-0">post consumer brands formely mom brands</div>
+
+
+      <div className="my-2 ms-2 lg:ms-0">true</div>
+      <div className="my-2 ms-2 lg:ms-0">Corporate Domains, Office 365, Google Analytics</div>
+      <div className="my-2 ms-2 lg:ms-0">Email Address: fasfsdfdsa@gmail.com, Email Validated: true, Reason: Safe to Send</div>
+      <div className="my-2 ms-2 lg:ms-0">30000USD</div>
+      <div className="my-2 ms-2 lg:ms-0">841</div>
+      <div className="my-2 ms-2 lg:ms-0">1</div>
+      <div className="my-2 ms-2 lg:ms-0">mombrands.com</div>
+      <div className="my-2 ms-2 lg:ms-0">false</div>
+      <div className="my-2 ms-2 lg:ms-0">2012</div>
+      <div className="my-2 ms-2 lg:ms-0">false</div>
+      <div className="my-2 ms-2 lg:ms-0">Verified</div>
+      <div className="my-2 ms-2 lg:ms-0">1 - consumer goods, 2 - consumer</div>
+      <div className="my-2 ms-2 lg:ms-0">7327</div>
+      <div className="my-2 ms-2 lg:ms-0">false</div>
+      <div className="my-2 ms-2 lg:ms-0">campaign reconciliation</div>
+      <div className="my-2 ms-2 lg:ms-0">55044</div>
+      <div className="my-2 ms-2 lg:ms-0">false</div>
+      </Col>
+      <Col sm={24} md={24} lg={24} xl={6} xxl={6}>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Contact Email Num Clicks :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Job Start Date :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Retail Location Count :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Personal Seniority :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Email Validation Date Time :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Hq Location City with State Or Country:
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Contact Email Replied :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Person Location Country :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Person Extrapolated Email Confidence :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Person Email Status Cd :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Contact Phone Numbers :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Sanitized Organization Name Unanalyzed :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Email Validated :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Current Technologies:
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Email Validation History :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Revenue in Thousands in Int :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Num Current Employees :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Num Languages :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Domain :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Contacy Email Open :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Founded Year :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Contacy Email Clicked :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Email Validated Status :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Relevant Keywords :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Num Linkedin Followers :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Contacy Email Spam Blocked :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Email Validation All :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Organization Location Hq Postl Code :
+      </div>
+      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
+        Contact Email Auto Responder :
+      </div>
+    
+      </Col>
+      <Col sm={24} md={24} lg={24} xl={6} xxl={6}>
+      <div className="my-2 ms-2 lg:ms-0">0</div>
+      <div className="my-2 ms-2 lg:ms-0">Nov, 1 2017</div>
+      <div className="my-2 ms-2 lg:ms-0">0</div>
+      <div className="my-2 ms-2 lg:ms-0">Manager</div>
+      <div className="my-2 ms-2 lg:ms-0">
+        2023-02-20T07:12:08.185896
+      </div>
+      <div className="my-2 ms-2 lg:ms-0">
+        Lakeville, Minnesota
+      </div>
+      <div className="my-2 ms-2 lg:ms-0">false</div>
+      <div className="my-2 ms-2 lg:ms-0">United States</div>
+      <div className="my-2 ms-2 lg:ms-0">0</div>
+      <div className="my-2 ms-2 lg:ms-0">Verified</div>
+      <div className="my-2 ms-2 lg:ms-0">1) Sanitized Number: +91234234234234, Status : No Status, Type : other</div>
+      <div className="my-2 ms-2 lg:ms-0">post consumer brands formely mom brands</div>
+
+
+      <div className="my-2 ms-2 lg:ms-0">true</div>
+      <div className="my-2 ms-2 lg:ms-0">Corporate Domains, Office 365, Google Analytics</div>
+      <div className="my-2 ms-2 lg:ms-0">Email Address: fasfsdfdsa@gmail.com, Email Validated: true, Reason: Safe to Send</div>
+      <div className="my-2 ms-2 lg:ms-0">30000USD</div>
+      <div className="my-2 ms-2 lg:ms-0">841</div>
+      <div className="my-2 ms-2 lg:ms-0">1</div>
+      <div className="my-2 ms-2 lg:ms-0">mombrands.com</div>
+      <div className="my-2 ms-2 lg:ms-0">false</div>
+      <div className="my-2 ms-2 lg:ms-0">2012</div>
+      <div className="my-2 ms-2 lg:ms-0">false</div>
+      <div className="my-2 ms-2 lg:ms-0">Verified</div>
+      <div className="my-2 ms-2 lg:ms-0">1 - consumer goods, 2 - consumer</div>
+      <div className="my-2 ms-2 lg:ms-0">7327</div>
+      <div className="my-2 ms-2 lg:ms-0">false</div>
+      <div className="my-2 ms-2 lg:ms-0">campaign reconciliation</div>
+      <div className="my-2 ms-2 lg:ms-0">55044</div>
+      <div className="my-2 ms-2 lg:ms-0">false</div>
+      </Col>
+      </Row>,
     },
   ];
+  const handleTabs = (active) => {
+    setActiveTab(active);
+  };
   return (
     <div className="userDetail">
       <Row>
@@ -239,139 +742,15 @@ function UserDetail() {
         </div>
       </div>
       <div className="personalDetail m-4">
-      <Row>
-          <Col sm={24} md={24} lg={24} xl={10} xxl={10}>
-          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-            Organization Hq Location State :
-          </div>
-          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-            Contact Email Num Clicks :
-          </div>
-          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-            Job Start Date :
-          </div>
-          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-            Organization Retail Location Count :
-          </div>
-          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-            Personal Seniority :
-          </div>
-          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-            Email Validation Date Time :
-          </div>
-          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-            Organization Hq Location City with State Or Country:
-          </div>
-          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-            Contact Email Replied :
-          </div>
-          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-            Person Location Country :
-          </div>
-          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-            Person Extrapolated Email Confidence :
-          </div>
-          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-            Person Email Status Cd :
-          </div>
-          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-            Contact Phone Numbers :
-          </div>
-          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-            Sanitized Organization Name Unanalyzed :
-          </div>
-          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-            Email Validated :
-          </div>
-          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-            Organization Current Technologies:
-          </div>
-          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-            Email Validation History :
-          </div>
-          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-            Organization Revenue in Thousands in Int :
-          </div>
-          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-            Organization Num Current Employees :
-          </div>
-          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-            Organization Num Languages :
-          </div>
-          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-            Organization Domain :
-          </div>
-          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-            Contacy Email Open :
-          </div>
-          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-            Organization Founded Year :
-          </div>
-          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-            Contacy Email Clicked :
-          </div>
-          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-            Email Validated Status :
-          </div>
-          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-            Organization Relevant Keywords :
-          </div>
-          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-            Organization Num Linkedin Followers :
-          </div>
-          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-            Contacy Email Spam Blocked :
-          </div>
-          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-            Email Validation All :
-          </div>
-          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-            Organization Location Hq Postl Code :
-          </div>
-          <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-            Contact Email Auto Responder :
-          </div>
-        
-          </Col>
-          <Col sm={24} md={24} lg={24} xl={14} xxl={14}>
-          <div className="my-2 ms-2 lg:ms-0">Minnesota</div>
-          <div className="my-2 ms-2 lg:ms-0">0</div>
-          <div className="my-2 ms-2 lg:ms-0">Nov, 1 2017</div>
-          <div className="my-2 ms-2 lg:ms-0">0</div>
-          <div className="my-2 ms-2 lg:ms-0">Manager</div>
-          <div className="my-2 ms-2 lg:ms-0">
-            2023-02-20T07:12:08.185896
-          </div>
-          <div className="my-2 ms-2 lg:ms-0">
-            Lakeville, Minnesota
-          </div>
-          <div className="my-2 ms-2 lg:ms-0">false</div>
-          <div className="my-2 ms-2 lg:ms-0">United States</div>
-          <div className="my-2 ms-2 lg:ms-0">0</div>
-          <div className="my-2 ms-2 lg:ms-0">Verified</div>
-          <div className="my-2 ms-2 lg:ms-0">1) Sanitized Number: +91234234234234, Status : No Status, Type : other</div>
-          <div className="my-2 ms-2 lg:ms-0">post consumer brands formely mom brands</div>
-
-
-          <div className="my-2 ms-2 lg:ms-0">true</div>
-          <div className="my-2 ms-2 lg:ms-0">Corporate Domains, Office 365, Google Analytics</div>
-          <div className="my-2 ms-2 lg:ms-0">Email Address: fasfsdfdsa@gmail.com, Email Validated: true, Reason: Safe to Send</div>
-          <div className="my-2 ms-2 lg:ms-0">30000USD</div>
-          <div className="my-2 ms-2 lg:ms-0">841</div>
-          <div className="my-2 ms-2 lg:ms-0">1</div>
-          <div className="my-2 ms-2 lg:ms-0">mombrands.com</div>
-          <div className="my-2 ms-2 lg:ms-0">false</div>
-          <div className="my-2 ms-2 lg:ms-0">2012</div>
-          <div className="my-2 ms-2 lg:ms-0">false</div>
-          <div className="my-2 ms-2 lg:ms-0">Verified</div>
-          <div className="my-2 ms-2 lg:ms-0">1 - consumer goods, 2 - consumer</div>
-          <div className="my-2 ms-2 lg:ms-0">7327</div>
-          <div className="my-2 ms-2 lg:ms-0">false</div>
-          <div className="my-2 ms-2 lg:ms-0">campaign reconciliation</div>
-          <div className="my-2 ms-2 lg:ms-0">55044</div>
-          <div className="my-2 ms-2 lg:ms-0">false</div>
-          </Col>
-          </Row>
+      <Tabs
+          className="fileTabs"
+          defaultActiveKey="b2c"
+          type="card"
+          size={"medium"}
+          items={tabItems}
+          onChange={handleTabs}
+      />
+      
         </div>
     </div>
   );
