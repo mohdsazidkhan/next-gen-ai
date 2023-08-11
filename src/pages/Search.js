@@ -13,6 +13,7 @@ import {
 } from "antd";
 import TopHeader from "../components/TopHeader";
 import Sidebar from "../components/Sidebar";
+import UserDetail from "./UserDetail";
 import {
   CheckCircleOutlined,
   CloseCircleOutlined,
@@ -26,6 +27,7 @@ const { Content } = Layout;
 
 const Search = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isDModalOpen, setIsDModalOpen] = useState(false);
   const [svalue, setsValue] = useState();
   const onChange = (newValue) => {
     setsValue(newValue);
@@ -35,6 +37,13 @@ const Search = () => {
   };
   const handleCancel = () => {
     setIsModalOpen(false);
+  };
+
+  const showDModal = () => {
+    setIsDModalOpen(true);
+  };
+  const handleDCancel = () => {
+    setIsDModalOpen(false);
   };
 
   const totalData = [
@@ -280,11 +289,9 @@ const Search = () => {
       align: "center",
       render: () => {
         return (
-          <Link target="_blank" to="/user-detail">
             <Tooltip title="View Detail">
-              <EyeOutlined className="text-[#333] cursor-pointer" />
+              <EyeOutlined className="text-[#333] cursor-pointer" onClick={showDModal}/>
             </Tooltip>
-          </Link>
         );
       },
     },
@@ -347,11 +354,9 @@ const Search = () => {
       align: "center",
       render: () => {
         return (
-          <Link target="_blank" to="/user-detail">
             <Tooltip title="View Detail">
-              <EyeOutlined className="text-[#333] cursor-pointer" />
+              <EyeOutlined className="text-[#333] cursor-pointer" onClick={showDModal}/>
             </Tooltip>
-          </Link>
         );
       },
     },
@@ -492,6 +497,16 @@ const Search = () => {
               </Form.Item>
             </Form>
           </Modal>
+          <Modal
+        title={<div className="text-md font-semibold">User Detail</div>}
+        open={isDModalOpen}
+        onCancel={handleDCancel}
+        footer={null}
+        className="userDetailModal"
+      >
+        <Divider />
+        <UserDetail />
+      </Modal>
         </Content>
       </Layout>
     </Layout>

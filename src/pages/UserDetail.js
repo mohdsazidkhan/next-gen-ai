@@ -102,8 +102,7 @@ function UserDetail() {
         </Col>
       </Row>
       <Row className="m-4">
-        <Col xs={24} sm={24} md={24} lg={4} xl={4}></Col>
-        <Col xs={24} sm={24} md={24} lg={8} xl={8}>
+        <Col xs={24} sm={24} md={24} lg={12} xl={12}>
           <p className="pe-0 lg:pe-8 pb-4 lg:pb-0 text-base text-[--secondary-color]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -239,100 +238,102 @@ function UserDetail() {
           </div>
         </div>
       </div>
-      <div className="grid grid-col-1 lg:grid-cols-2 gap-4 personalDetail m-4">
-        <div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 font-medium text-[--primary-color]">
+      <div className="personalDetail m-4">
+      <Row>
+          <Col sm={24} md={24} lg={24} xl={12} xxl={12}>
+          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Organization Hq Location State :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 font-medium text-[--primary-color]">
+          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Contact Email Num Clicks :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 font-medium text-[--primary-color]">
+          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Job Start Date :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 font-medium text-[--primary-color]">
+          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Organization Retail Location Count :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 font-medium text-[--primary-color]">
+          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Personal Seniority :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 font-medium text-[--primary-color]">
+          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Email Validation Date Time :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 font-medium text-[--primary-color]">
+          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Organization Hq Location City with State Or Country:
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 font-medium text-[--primary-color]">
+          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Contact Email Replied :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 font-medium text-[--primary-color]">
+          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Person Location Country :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 font-medium text-[--primary-color]">
+          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Person Extrapolated Email Confidence :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 font-medium text-[--primary-color]">
+          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Person Email Status Cd :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 font-medium text-[--primary-color]">
+          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Contact Phone Numbers :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 font-medium text-[--primary-color]">
+          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Sanitized Organization Name Unanalyzed :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 font-medium text-[--primary-color]">
+          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Email Validated :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 font-medium text-[--primary-color]">
+          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Organization Current Technologies:
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 font-medium text-[--primary-color]">
+          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Email Validation History :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 font-medium text-[--primary-color]">
+          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Organization Revenue in Thousands in Int :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 font-medium text-[--primary-color]">
+          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Organization Num Current Employees :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 font-medium text-[--primary-color]">
+          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Organization Num Languages :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 font-medium text-[--primary-color]">
+          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Organization Domain :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 font-medium text-[--primary-color]">
+          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Contacy Email Open :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 font-medium text-[--primary-color]">
+          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Organization Founded Year :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 font-medium text-[--primary-color]">
+          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Contacy Email Clicked :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 font-medium text-[--primary-color]">
+          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Email Validated Status :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 font-medium text-[--primary-color]">
+          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Organization Relevant Keywords :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 font-medium text-[--primary-color]">
+          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Organization Num Linkedin Followers :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 font-medium text-[--primary-color]">
+          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Contacy Email Spam Blocked :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 font-medium text-[--primary-color]">
+          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Email Validation All :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 font-medium text-[--primary-color]">
+          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Organization Location Hq Postl Code :
           </div>
-          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 font-medium text-[--primary-color]">
+          <div className="text-base my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
             Contact Email Auto Responder :
           </div>
-        </div>
-        <div>
+        
+          </Col>
+          <Col sm={24} md={24} lg={24} xl={12} xxl={12}>
           <div className="text-base my-2 ms-2 lg:ms-6">Minnesota</div>
           <div className="text-base my-2 ms-2 lg:ms-6">0</div>
           <div className="text-base my-2 ms-2 lg:ms-6">Nov, 1 2017</div>
@@ -369,8 +370,9 @@ function UserDetail() {
           <div className="text-base my-2 ms-2 lg:ms-6">campaign reconciliation</div>
           <div className="text-base my-2 ms-2 lg:ms-6">55044</div>
           <div className="text-base my-2 ms-2 lg:ms-6">false</div>
+          </Col>
+          </Row>
         </div>
-      </div>
     </div>
   );
 }
