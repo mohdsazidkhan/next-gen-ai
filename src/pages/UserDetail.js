@@ -109,12 +109,6 @@ function UserDetail() {
       <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
         Email Validation All :
       </div>
-      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-        Organization Location Hq Postl Code :
-      </div>
-      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-        Contact Email Auto Responder :
-      </div>
     
       </Col>
       <Col sm={24} md={24} lg={24} xl={6} xxl={6}>
@@ -239,12 +233,6 @@ function UserDetail() {
       </div>
       <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
         Email Validation All :
-      </div>
-      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-        Organization Location Hq Postl Code :
-      </div>
-      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-        Contact Email Auto Responder :
       </div>
     
       </Col>
@@ -382,12 +370,6 @@ function UserDetail() {
       <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
         Email Validation All :
       </div>
-      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-        Organization Location Hq Postl Code :
-      </div>
-      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-        Contact Email Auto Responder :
-      </div>
     
       </Col>
       <Col sm={24} md={24} lg={24} xl={6} xxl={6}>
@@ -508,12 +490,6 @@ function UserDetail() {
       </div>
       <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
         Email Validation All :
-      </div>
-      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-        Organization Location Hq Postl Code :
-      </div>
-      <div className="my-2 me-2 lg:me-6 ms-2 lg:ms-6 text-[--primary-color]">
-        Contact Email Auto Responder :
       </div>
     
       </Col>
