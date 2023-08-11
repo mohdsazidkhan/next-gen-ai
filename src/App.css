@@ -631,7 +631,7 @@ header {
         background-color: rgba(0, 0, 0, 0.5);
     }
 
-    .userDetailModal.ant-modal-content {
+    .userDetailModal .ant-modal-content {
         padding: 10px 0 !important;
     }
 
