@@ -334,42 +334,42 @@ function UserDetail() {
         
           </Col>
           <Col sm={24} md={24} lg={24} xl={14} xxl={14}>
-          <div className="text-base my-2">Minnesota</div>
-          <div className="text-base my-2">0</div>
-          <div className="text-base my-2">Nov, 1 2017</div>
-          <div className="text-base my-2">0</div>
-          <div className="text-base my-2">Manager</div>
-          <div className="text-base my-2">
+          <div className="text-base my-2 ms-2 lg:ms-0">Minnesota</div>
+          <div className="text-base my-2 ms-2 lg:ms-0">0</div>
+          <div className="text-base my-2 ms-2 lg:ms-0">Nov, 1 2017</div>
+          <div className="text-base my-2 ms-2 lg:ms-0">0</div>
+          <div className="text-base my-2 ms-2 lg:ms-0">Manager</div>
+          <div className="text-base my-2 ms-2 lg:ms-0">
             2023-02-20T07:12:08.185896
           </div>
-          <div className="text-base my-2">
+          <div className="text-base my-2 ms-2 lg:ms-0">
             Lakeville, Minnesota
           </div>
-          <div className="text-base my-2">false</div>
-          <div className="text-base my-2">United States</div>
-          <div className="text-base my-2">0</div>
-          <div className="text-base my-2">Verified</div>
-          <div className="text-base my-2">1) Sanitized Number: +91234234234234, Status : No Status, Type : other</div>
-          <div className="text-base my-2">post consumer brands formely mom brands</div>
+          <div className="text-base my-2 ms-2 lg:ms-0">false</div>
+          <div className="text-base my-2 ms-2 lg:ms-0">United States</div>
+          <div className="text-base my-2 ms-2 lg:ms-0">0</div>
+          <div className="text-base my-2 ms-2 lg:ms-0">Verified</div>
+          <div className="text-base my-2 ms-2 lg:ms-0">1) Sanitized Number: +91234234234234, Status : No Status, Type : other</div>
+          <div className="text-base my-2 ms-2 lg:ms-0">post consumer brands formely mom brands</div>
 
 
-          <div className="text-base my-2">true</div>
-          <div className="text-base my-2">Corporate Domains, Office 365, Google Analytics</div>
-          <div className="text-base my-2">Email Address: fasfsdfdsa@gmail.com, Email Validated: true, Reason: Safe to Send</div>
-          <div className="text-base my-2">30000USD</div>
-          <div className="text-base my-2">841</div>
-          <div className="text-base my-2">1</div>
-          <div className="text-base my-2">mombrands.com</div>
-          <div className="text-base my-2">false</div>
-          <div className="text-base my-2">2012</div>
-          <div className="text-base my-2">false</div>
-          <div className="text-base my-2">Verified</div>
-          <div className="text-base my-2">1 - consumer goods, 2 - consumer</div>
-          <div className="text-base my-2">7327</div>
-          <div className="text-base my-2">false</div>
-          <div className="text-base my-2">campaign reconciliation</div>
-          <div className="text-base my-2">55044</div>
-          <div className="text-base my-2">false</div>
+          <div className="text-base my-2 ms-2 lg:ms-0">true</div>
+          <div className="text-base my-2 ms-2 lg:ms-0">Corporate Domains, Office 365, Google Analytics</div>
+          <div className="text-base my-2 ms-2 lg:ms-0">Email Address: fasfsdfdsa@gmail.com, Email Validated: true, Reason: Safe to Send</div>
+          <div className="text-base my-2 ms-2 lg:ms-0">30000USD</div>
+          <div className="text-base my-2 ms-2 lg:ms-0">841</div>
+          <div className="text-base my-2 ms-2 lg:ms-0">1</div>
+          <div className="text-base my-2 ms-2 lg:ms-0">mombrands.com</div>
+          <div className="text-base my-2 ms-2 lg:ms-0">false</div>
+          <div className="text-base my-2 ms-2 lg:ms-0">2012</div>
+          <div className="text-base my-2 ms-2 lg:ms-0">false</div>
+          <div className="text-base my-2 ms-2 lg:ms-0">Verified</div>
+          <div className="text-base my-2 ms-2 lg:ms-0">1 - consumer goods, 2 - consumer</div>
+          <div className="text-base my-2 ms-2 lg:ms-0">7327</div>
+          <div className="text-base my-2 ms-2 lg:ms-0">false</div>
+          <div className="text-base my-2 ms-2 lg:ms-0">campaign reconciliation</div>
+          <div className="text-base my-2 ms-2 lg:ms-0">55044</div>
+          <div className="text-base my-2 ms-2 lg:ms-0">false</div>
           </Col>
           </Row>
         </div>
