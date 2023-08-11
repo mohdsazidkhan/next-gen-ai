@@ -123,7 +123,7 @@ function UserDetail() {
           xl={12}
           className="bg-[--primary-color] flex items-center justify-start"
         >
-          <div className="ms-8 p-4 lg:p-0">
+          <div className="ms-0 lg:ms-8 p-4 lg:p-0">
             <ul className="userList">
               <li className="text-white text-base mb-4 flex">
                 <div className="w-auto lg:w-32">Organization</div> :{" "}
