@@ -6,9 +6,11 @@ import {
 } from "@ant-design/icons";
 import { Button, Form, Input } from "antd";
 import FormItem from "antd/es/form/FormItem";
+import { Footer } from "antd/es/layout/layout";
 import { Link } from "react-router-dom";
 function ForgotPassword() {
   return (
+    <>
     <div className="loginBg flex justify-center items-center ">
       <div className="grid grid-col-2 lg:grid-cols-2 gap-8 lg:gap-28">
         <div className="text-center">
@@ -52,6 +54,8 @@ function ForgotPassword() {
         </div>
       </div>
     </div>
+    <Footer className="bg-[--secondary-color] text-white text-center">© Copyright 2023 <a target="_blank" className="text-[--primary-color]" href="https://nexgenai.io/">NexGenAI.io</a> – A NexGenAI Holding Group. All Rights Reserved.</Footer>
+    </>
   );
 }
 export default ForgotPassword;

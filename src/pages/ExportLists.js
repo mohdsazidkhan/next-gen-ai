@@ -10,6 +10,7 @@ import {
   ReloadOutlined,
 } from "@ant-design/icons";
 import { Link } from "react-router-dom";
+import { Footer } from "antd/es/layout/layout";
 
 const { Content } = Layout;
 
@@ -92,6 +93,7 @@ const ExportLists = () => {
             </Card>
           </div>
         </Content>
+        <Footer className="footer bg-[--secondary-color] text-white text-center">© Copyright 2023 <a target="_blank" className="text-[--primary-color]" href="https://nexgenai.io/">NexGenAI.io</a> – A NexGenAI Holding Group. All Rights Reserved.</Footer>
       </Layout>
     </Layout>
   );

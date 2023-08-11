@@ -72,13 +72,6 @@ const TopHeader = () => {
               </Link>
             </Tooltip>
           </div>
-          <div>
-            <Tooltip title="Export Lists">
-              <Link to="/export-lists" className="cursor-pointer">
-                <UploadOutlined />
-              </Link>
-            </Tooltip>
-          </div>
           <div className="mt-0 lg:mt-1">
             <Tooltip title="Search">
               <Link to="/search" className="cursor-pointer">
@@ -86,6 +79,14 @@ const TopHeader = () => {
               </Link>
             </Tooltip>
           </div>
+          <div>
+            <Tooltip title="Export Lists">
+              <Link to="/export-lists" className="cursor-pointer">
+                <UploadOutlined />
+              </Link>
+            </Tooltip>
+          </div>
+          
           <div className="cursor-pointer">
             <Dropdown
               menu={{

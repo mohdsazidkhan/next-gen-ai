@@ -17,6 +17,7 @@ import { Chart as ChartJS, ArcElement,
   Legend, 
 } from "chart.js";
 import { Pie, Bar } from "react-chartjs-2";
+import { Footer } from "antd/es/layout/layout";
 ChartJS.register(ArcElement, CategoryScale,
   LinearScale,
   BarElement,
@@ -176,6 +177,7 @@ const Dashboard = () => {
             </Col>
           </Row>
         </Content>
+        <Footer className="footer bg-[--secondary-color] text-white text-center">© Copyright 2023 <a target="_blank" className="text-[--primary-color]" href="https://nexgenai.io/">NexGenAI.io</a> – A NexGenAI Holding Group. All Rights Reserved.</Footer>
       </Layout>
     </Layout>
   );
