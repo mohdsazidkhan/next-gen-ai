@@ -313,7 +313,7 @@ ul.userList li:after {
     height: 85vh;
 }
 
-::-webkit-scrollbar {
+::-webkit-scrollbar{
     width: 8px;
 }
 
@@ -331,7 +331,32 @@ ul.userList li:after {
 ::-webkit-scrollbar-thumb:hover {
     background: #49cdb4;
 }
-
+.userDetailTable{
+    width: 100%;
+}
+.userDetailTable tr td{
+    padding: 12px 20px;
+}
+.userDetailTable tr td{
+    font-size: 12px;
+    border-bottom: 1px solid #ccc;
+    white-space: nowrap;
+}
+.userDetailTable tr td:nth-child(2){
+    border-right: 2px solid #ccc;
+}
+.personalDetail .ant-tabs-nav{
+    margin-bottom: 0;
+}
+.verifyEmail{
+    background: #fff;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
 .exportTable .ant-table-tbody>tr>td {
     padding: 4px 12px !important;
     font-size: 12px;
@@ -633,7 +658,9 @@ header,.footer{
     .rightHeader {
         padding-right: 10px;
     }
-
+    .userTableMobile{
+        overflow-x: auto;
+    }
     .exportTable .ant-table-thead>tr>th,
     .exportTable .ant-table-tbody>tr>td {
         white-space: nowrap;

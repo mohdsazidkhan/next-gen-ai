@@ -15,8 +15,9 @@ import TopHeader from "../components/TopHeader";
 import Sidebar from "../components/Sidebar";
 import UserDetail from "./UserDetail";
 import {
-  CheckCircleOutlined,
-  CloseCircleOutlined,
+  LinkedinFilled,
+  FacebookFilled,
+  TwitterSquareFilled,
   EyeOutlined,
   ExportOutlined,
   ReloadOutlined,
@@ -50,102 +51,112 @@ const Search = () => {
   const totalData = [
     {
       key: "1",
-      name: "Nike",
-      area: "Downing Street",
+      name: "Aakas Sharma",
+      gender: "Male",
       phone: 7876543210,
+      country: "India",
       email: "onedoe@gmail.com",
       jobtitle: "Dotnet Developer",
-      lastverified: "15 Jan 2022",
+      organization: "GCP",
       cScore: 14,
     },
     {
       key: "2",
-      name: "Arun",
-      area: "10 Downing Street",
+      name: "Suresh Kumar",
+      gender: "Male",
       phone: 9876543210,
+      country: "India",
       email: "bhonedoe@gmail.com",
       jobtitle: "Front End Developer",
-      lastverified: "15 Jan 2022",
+      organization: "Amazon",
       cScore: 25,
     },
     {
       key: "3",
-      name: "Saurav",
-      area: "10 Downing Street",
+      name: "Saurav Ganguly",
+      gender: "Male",
       phone: 8876543210,
+      country: "USA",
       email: "chonedoe@gmail.com",
       jobtitle: "HR Manager",
-      lastverified: "15 Jan 2022",
+      organization: "Australia",
       cScore: 56,
     },
     {
       key: "4",
-      name: "Tarun",
-      area: "10 Downing Street",
+      name: "Tarun Sharma",
+      gender: "Male",
       phone: 7876543210,
+      country: "UK",
       email: "dhonedoe@gmail.com",
       jobtitle: "Node JS Developer",
-      lastverified: "15 Jan 2022",
+      organization: "Flipkart",
       cScore: 67,
     },
     {
       key: "5",
-      name: "Zack",
-      area: "10 Downing Street",
-      phone: 6876543210,
-      email: "ehonedoe@gmail.com",
-      jobtitle: "React JS Developer",
-      lastverified: "15 Jan 2022",
-      cScore: 74,
+      name: "Aman Gupta",
+      gender: "Male",
+      phone: 7876543210,
+      country: "India",
+      email: "onedoe@gmail.com",
+      jobtitle: "Dotnet Developer",
+      organization: "GCP",
+      cScore: 14,
     },
     {
       key: "6",
-      name: "Kelvin",
-      area: "10 Downing Street",
-      phone: 5876543210,
-      email: "fhonedoe@gmail.com",
-      jobtitle: "Dot Net Developer",
-      lastverified: "15 Jan 2022",
-      cScore: 87,
+      name: "Aman Gupta",
+      gender: "Male",
+      phone: 7876543210,
+      country: "India",
+      email: "onedoe@gmail.com",
+      jobtitle: "Dotnet Developer",
+      organization: "GCP",
+      cScore: 14,
     },
     {
       key: "7",
-      name: "Kumar",
-      area: "10 Downing Street",
-      phone: 4876543210,
-      email: "ghonedoe@gmail.com",
-      jobtitle: "Java Developer",
-      lastverified: "15 Jan 2022",
-      cScore: 64,
+      name: "Aman Gupta",
+      gender: "Male",
+      phone: 7876543210,
+      country: "India",
+      email: "onedoe@gmail.com",
+      jobtitle: "Dotnet Developer",
+      organization: "GCP",
+      cScore: 14,
     },
     {
       key: "8",
-      name: "Nithesh",
-      area: "10 Downing Street",
-      phone: 3876543210,
-      email: "hhonedoe@gmail.com",
-      jobtitle: "PHP Developer",
-      lastverified: "15 Jan 2022",
-      cScore: 45,
+      name: "Aman Gupta",
+      gender: "Male",
+      phone: 7876543210,
+      country: "India",
+      email: "onedoe@gmail.com",
+      jobtitle: "Dotnet Developer",
+      organization: "GCP",
+      cScore: 14,
     },
     {
       key: "9",
-      name: "Mahesh",
-      area: "10 Downing Street",
-      phone: 2876543210,
-      email: "ihonedoe@gmail.com",
-      jobtitle: "Software Developer",
-      lastverified: "15 Jan 2022",
-      cScore: 78,
+      name: "Aman Gupta",
+      gender: "Male",
+      phone: 7876543210,
+      country: "India",
+      email: "onedoe@gmail.com",
+      jobtitle: "Dotnet Developer",
+      organization: "GCP",
+      cScore: 14,
     },
     {
       key: "10",
-      name: "Himesh",
-      area: "10 Downing Street",
-      phone: 1876543210,
-      email: "jhonedoe@gmail.com",
-      jobtitle: "Back End Developer",
-      lastverified: "15 Jan 2022",
+      name: "Aman Gupta",
+      gender: "Male",
+      phone: 7876543210,
+      country: "India",
+      email: "onedoe@gmail.com",
+      jobtitle: "Dotnet Developer",
+      organization: "GCP",
       cScore: 14,
     },
   ];
@@ -153,162 +164,210 @@ const Search = () => {
   const dataSource = [
     {
       key: "1",
-      name: "Mike",
-      area: "10 Downing Street",
-      phone: 9876543210,
-      email: "ahonedoe@gmail.com",
-      jobtitle: "Python Developer",
-      lastverified: "15 Jan 2022",
-      cScore: 47,
+      name: "Aman Gupta",
+      gender: "Male",
+      phone: 7876543210,
+      country: "India",
+      email: "onedoe@gmail.com",
+      jobtitle: "Dotnet Developer",
+      organization: "GCP",
+      cScore: 14,
     },
     {
       key: "2",
-      name: "Arun",
-      area: "10 Downing Street",
+      name: "Suresh Kumar",
+      gender: "Male",
       phone: 9876543210,
+      country: "India",
       email: "bhonedoe@gmail.com",
       jobtitle: "Front End Developer",
-      lastverified: "15 Jan 2022",
-      cScore: 48,
-    },
-    {
-      key: "3",
-      name: "Saurav",
-      area: "10 Downing Street",
-      phone: 8876543210,
-      email: "chonedoe@gmail.com",
-      jobtitle: "HR Manager",
-      lastverified: "15 Jan 2022",
-      cScore: 35,
-    },
-    {
-      key: "4",
-      name: "Tarun",
-      area: "10 Downing Street",
-      phone: 7876543210,
-      email: "dhonedoe@gmail.com",
-      jobtitle: "Node JS Developer",
-      lastverified: "15 Jan 2022",
-      cScore: 95,
-    },
-    {
-      key: "5",
-      name: "Zack",
-      area: "10 Downing Street",
-      phone: 6876543210,
-      email: "ehonedoe@gmail.com",
-      jobtitle: "React JS Developer",
-      lastverified: "15 Jan 2022",
-      cScore: 45,
-    },
-    {
-      key: "6",
-      name: "Kelvin",
-      area: "10 Downing Street",
-      phone: 5876543210,
-      email: "fhonedoe@gmail.com",
-      jobtitle: "Dot Net Developer",
-      lastverified: "15 Jan 2022",
-      cScore: 66,
-    },
-    {
-      key: "7",
-      name: "Kumar",
-      area: "10 Downing Street",
-      phone: 4876543210,
-      email: "ghonedoe@gmail.com",
-      jobtitle: "Java Developer",
-      lastverified: "15 Jan 2022",
-      cScore: 56,
-    },
-    {
-      key: "8",
-      name: "Nithesh",
-      area: "10 Downing Street",
-      phone: 3876543210,
-      email: "hhonedoe@gmail.com",
-      jobtitle: "PHP Developer",
-      lastverified: "15 Jan 2022",
-      cScore: 85,
-    },
-    {
-      key: "9",
-      name: "Mahesh",
-      area: "10 Downing Street",
-      phone: 2876543210,
-      email: "ihonedoe@gmail.com",
-      jobtitle: "Software Developer",
-      lastverified: "15 Jan 2022",
+      organization: "Amazon",
       cScore: 25,
     },
     {
+      key: "3",
+      name: "Saurav Ganguly",
+      gender: "Male",
+      phone: 8876543210,
+      country: "USA",
+      email: "chonedoe@gmail.com",
+      jobtitle: "HR Manager",
+      organization: "Australia",
+      cScore: 56,
+    },
+    {
+      key: "4",
+      name: "Tarun Kumar",
+      gender: "Male",
+      phone: 7876543210,
+      country: "UK",
+      email: "dhonedoe@gmail.com",
+      jobtitle: "Node JS Developer",
+      organization: "Flipkart",
+      cScore: 67,
+    },
+    {
+      key: "5",
+      name: "Aman Gupta",
+      gender: "Male",
+      phone: 7876543210,
+      country: "India",
+      email: "onedoe@gmail.com",
+      jobtitle: "Dotnet Developer",
+      organization: "GCP",
+      cScore: 14,
+    },
+    {
+      key: "6",
+      name: "Aman Gupta",
+      gender: "Male",
+      phone: 7876543210,
+      country: "India",
+      email: "onedoe@gmail.com",
+      jobtitle: "Dotnet Developer",
+      organization: "GCP",
+      cScore: 14,
+    },
+    {
+      key: "7",
+      name: "Aman Gupta",
+      gender: "Male",
+      phone: 7876543210,
+      country: "India",
+      email: "onedoe@gmail.com",
+      jobtitle: "Dotnet Developer",
+      organization: "GCP",
+      cScore: 14,
+    },
+    {
+      key: "8",
+      name: "Aman Gupta",
+      gender: "Male",
+      phone: 7876543210,
+      country: "India",
+      email: "onedoe@gmail.com",
+      jobtitle: "Dotnet Developer",
+      organization: "GCP",
+      cScore: 14,
+    },
+    {
+      key: "9",
+      name: "Aman Gupta",
+      gender: "Male",
+      phone: 7876543210,
+      country: "India",
+      email: "onedoe@gmail.com",
+      jobtitle: "Dotnet Developer",
+      organization: "GCP",
+      cScore: 14,
+    },
+    {
       key: "10",
-      name: "Himesh",
-      area: "10 Downing Street",
-      phone: 1876543210,
-      email: "jhonedoe@gmail.com",
-      jobtitle: "Back End Developer",
-      lastverified: "15 Jan 2022",
-      cScore: 55,
+      name: "Aman Gupta",
+      gender: "Male",
+      phone: 7876543210,
+      country: "India",
+      email: "onedoe@gmail.com",
+      jobtitle: "Dotnet Developer",
+      organization: "GCP",
+      cScore: 14,
     },
   ];
 
   const columns = [
     {
-      title: "No.",
+      title: "S.No.",
       dataIndex: "key",
       key: "key",
     },
     {
-      title: "Name",
+      title: "Full Name",
       dataIndex: "name",
       key: "name",
       sorter: (a, b) => a.name.localeCompare(b.name),
     },
     {
-      title: "Area",
-      dataIndex: "area",
-      key: "area",
-      sorter: (a, b) => a.area.localeCompare(b.area),
+      title: "Gender",
+      dataIndex: "gender",
+      key: "gender",
+    },
+    {
+      title: "Email",
+      align: "center",
+      render: (record) => {
+        return (
+          <a href={`mailto:${record.email}`} className="text-[#1677ff] hover:text-[white]">
+          {record.email}
+        </a>
+        );
+      },
     },
     {
       title: "Phone",
       dataIndex: "phone",
       key: "phone",
-      sorter: (a, b) => a.phone - b.phone,
+      //sorter: (a, b) => a.phone - b.phone,
     },
     {
-      title: "Email",
-      dataIndex: "email",
-      key: "email",
-      sorter: (a, b) => a.email.localeCompare(b.email),
+      title: "Mobile",
+      dataIndex: "phone",
+      key: "phone",
+      //sorter: (a, b) => a.phone - b.phone,
     },
     {
-      title: "Job Title",
-      dataIndex: "jobtitle",
-      key: "jobtitle",
-      sorter: (a, b) => a.jobtitle.localeCompare(b.jobtitle),
+      title: "Country",
+      dataIndex: "country",
+      key: "country",
+      sorter: (a, b) => a.country.localeCompare(b.country),
     },
     {
-      title: "Last Verified",
-      dataIndex: "lastverified",
-      key: "lastverified",
-    },
-    {
-      title: "Verified",
-      align: "center",
+      title: "Linkedin",
       render: () => {
         return (
-          <Tooltip title="Verified">
-            <CheckCircleOutlined className="text-[#333] text-md" />
+          <Tooltip title="Linkedin">
+            <LinkedinFilled />
           </Tooltip>
         );
       },
     },
     {
+      title: "Facebook",
+      render: () => {
+        return (
+          <Tooltip title="Facebook">
+            <FacebookFilled />
+          </Tooltip>
+        );
+      },
+    },
+    {
+      title: "Twitter",
+      render: () => {
+        return (
+          <Tooltip title="Twitter">
+            <TwitterSquareFilled />
+          </Tooltip>
+        );
+      },
+    },
+    {
+      title: "Organization",
+      align: "center",
+      key: "organization",
+      dataIndex: "organization"
+
+    },
+    {
+    title: "Job Title",
+    dataIndex: "jobtitle",
+    key: "jobtitle",
+    sorter: (a, b) => a.jobtitle.localeCompare(b.jobtitle),
+    },
+    {
       title: "Confidence Score",
       align: "center",
       key: 'cScore',
+      align: 'center',
       render: (record) => {
         if(record.cScore < 50){
         return (
@@ -344,55 +403,91 @@ const Search = () => {
 
   const totalcolumns = [
     {
-      title: "No.",
+      title: "S.No.",
       dataIndex: "key",
       key: "key",
     },
     {
-      title: "Name",
+      title: "Full Name",
       dataIndex: "name",
       key: "name",
       sorter: (a, b) => a.name.localeCompare(b.name),
     },
     {
-      title: "Area",
-      dataIndex: "area",
-      key: "area",
-      sorter: (a, b) => a.area.localeCompare(b.area),
+      title: "Gender",
+      dataIndex: "gender",
+      key: "gender",
+    },
+    {
+      title: "Email",
+      align: "center",
+      render: (record) => {
+        return (
+          <a href={`mailto:${record.email}`} className="text-[#1677ff] hover:text-[white]">
+            {record.email}
+          </a>
+        );
+      },
     },
     {
       title: "Phone",
       dataIndex: "phone",
       key: "phone",
-      sorter: (a, b) => a.phone - b.phone,
+      //sorter: (a, b) => a.phone - b.phone,
     },
     {
-      title: "Email",
-      dataIndex: "email",
-      key: "email",
-      sorter: (a, b) => a.email.localeCompare(b.email),
+      title: "Mobile",
+      dataIndex: "phone",
+      key: "phone",
+      //sorter: (a, b) => a.phone - b.phone,
     },
     {
-      title: "Job Title",
-      dataIndex: "jobtitle",
-      key: "jobtitle",
-      sorter: (a, b) => a.jobtitle.localeCompare(b.jobtitle),
+      title: "Country",
+      dataIndex: "country",
+      key: "country",
+      sorter: (a, b) => a.country.localeCompare(b.country),
     },
     {
-      title: "Last Verified",
-      dataIndex: "lastverified",
-      key: "lastverified",
-    },
-    {
-      title: "Verified",
-      align: "center",
+      title: "Linkedin",
       render: () => {
         return (
-          <Tooltip title="Verified">
-            <CloseCircleOutlined className="text-[#f34e4e] text-md" />
+          <Tooltip title="Linkedin">
+            <LinkedinFilled />
           </Tooltip>
         );
       },
+    },
+    {
+      title: "Facebook",
+      render: () => {
+        return (
+          <Tooltip title="Facebook">
+            <FacebookFilled />
+          </Tooltip>
+        );
+      },
+    },
+    {
+      title: "Twitter",
+      render: () => {
+        return (
+          <Tooltip title="Twitter">
+            <TwitterSquareFilled />
+          </Tooltip>
+        );
+      },
+    },
+    {
+      title: "Organization",
+      align: "center",
+      dataIndex: "organization",
+      key: "organization"
+    },
+    {
+    title: "Job Title",
+    dataIndex: "jobtitle",
+    key: "jobtitle",
+    sorter: (a, b) => a.jobtitle.localeCompare(b.jobtitle),
     },
     {
       title: "Confidence Score",
