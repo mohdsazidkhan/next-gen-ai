@@ -170,8 +170,8 @@ function UserDetail() {
               <CloseOutlined className="text-[#ff1313]" />
             </div>
             <div className="flex gap-3 mt-1">
-              <LinkedinFilled className="cursor-pointer text-2xl" />
-              <FacebookFilled className="cursor-pointer text-2xl" />
+              <LinkedinFilled className="cursor-pointer text-2xl text-[crimson]" />
+              <FacebookFilled className="cursor-pointer text-2xl text-[forestgreen]" />
               <TwitterSquareFilled className="cursor-pointer text-2xl" />
             </div>
           </div>
