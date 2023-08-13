@@ -618,6 +618,12 @@ header,.footer{
     color: #fff;
     margin: auto
 }
+.socialTableIcon svg{
+    width: 30px;
+}
+.userDSocial:hover svg path:nth-child(1){
+    fill: #585d68;
+}
 .redScore{
     background-color: crimson;
 }
